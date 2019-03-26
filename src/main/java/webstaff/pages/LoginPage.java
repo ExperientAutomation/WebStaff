@@ -15,13 +15,13 @@ public class LoginPage extends TestBase{
 	@FindBy(xpath="//button[@type='submit']")
 	WebElement Loginbutton;
 
-	@FindBy(xpath="//button[contains(.,'Please Select')]")
+	@FindBy(xpath="//div[@class='input-group-button']")
 	WebElement QCGroupSelect;
 	
 	@FindBy(xpath="//li[1]/button")
 	WebElement QCHousing;
 	
-	@FindBy(xpath="//button[text()='Continue']")
+	@FindBy(xpath="//footer[@class='text-right']/exl-template")
 	WebElement Continue;
 	
 	

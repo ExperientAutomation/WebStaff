@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import webstaff.util.TestUtil;
 import webstaff.util.WebEventListener;
@@ -22,6 +23,7 @@ public class TestBase {
 	public static WebDriver driver;
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
+	public static WebDriverWait wait;
 
 	public TestBase() {
 		try {
@@ -61,6 +63,7 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(TestUtil.PAGE_LOAD_TIMEOUT,TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.IMPLICIT_WAIT,TimeUnit.SECONDS);
+		wait = new WebDriverWait(driver, 20);
 		driver.get(prop.getProperty("url"));
 	}
 }

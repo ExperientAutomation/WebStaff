@@ -21,6 +21,13 @@ public class TransactionPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
+	//Actions:
+	public boolean ClickOnTransactionPage() {
+		
+		TransactionTab.click();
+		return TransactionTable.isDisplayed();
+	}
+	
 	
 
 }

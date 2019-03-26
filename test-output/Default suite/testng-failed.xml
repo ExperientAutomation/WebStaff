@@ -5,9 +5,34 @@
     <classes>
       <class name="webstaff.TestCases.WebStaff_TCExecution">
         <methods>
-          <include name="QCGroupselectAndLoginPage"/>
+          <include name="EnterBadgeFields"/>
+          <include name="SelectPendTypeList"/>
+          <include name="EnterSpecailNotes"/>
           <include name="tearDown"/>
+          <include name="VerifyPendResolved"/>
+          <include name="CancelRecordWindow"/>
+          <include name="VerifyInCart"/>
+          <include name="VerifyCancelledText"/>
+          <include name="OpenNoteWindow"/>
+          <include name="OpenPendsTab"/>
+          <include name="RuleOverrides"/>
+          <include name="VerifyShowItemTabTest"/>
+          <include name="EnterSpecialAcc"/>
           <include name="setup"/>
+          <include name="ResetLink"/>
+          <include name="UndoChanges"/>
+          <include name="AddShowItemsToCart"/>
+          <include name="OpenSpecailAccModal"/>
+          <include name="ChangeFlowToExhibitor"/>
+          <include name="VerifyShowItemTab"/>
+          <include name="RuleOverrideSelect"/>
+          <include name="OpenMoveToForm"/>
+          <include name="UnCancelRecordPopupMsg"/>
+          <include name="VerifyTransactionTab"/>
+          <include name="OpenBadgeFields"/>
+          <include name="UnCancelAndSave"/>
+          <include name="VerifyConfirmationPreviewWindow"/>
+          <include name="OpenConfirmationTab"/>
         </methods>
       </class> <!-- webstaff.TestCases.WebStaff_TCExecution -->
     </classes>

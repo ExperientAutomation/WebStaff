@@ -1,7 +1,5 @@
 package webstaff.util;
 
-import java.io.IOException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -23,6 +21,57 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	XlsUtil xls = new XlsUtil();
 	WebStaff_TCExecution WebStaff_test = new WebStaff_TCExecution (); 
 	String sheetname = "WebStaff_TC";
+	
+	@Override
+	public void onTestStart(ITestResult result) {
+		
+	System.out.println(result.getMethod().getMethodName());
+		
+	}
+
+	@Override
+	public void onTestSuccess(ITestResult result) {
+		System.out.println("Test cases "+WebStaff_TCExecution.row+" passed");
+		xls.setCellData(sheetname, usernamecolnumber+1, WebStaff_TCExecution.row,"Pass");	
+		xls.setCellData(sheetname, usernamecolnumber, WebStaff_TCExecution.row,System.getProperty("user.name"));
+	}
+
+	@Override
+	public void onTestFailure(ITestResult result) {		
+		System.out.println("Test cases "+WebStaff_TCExecution.row+" failed");
+		xls.setCellData(sheetname, usernamecolnumber+1, WebStaff_TCExecution.row,"Fail");	
+		xls.setCellData(sheetname, usernamecolnumber, WebStaff_TCExecution.row,System.getProperty("user.name"));
+	
+	}
+	
+	@Override
+	public void onException(Throwable error, WebDriver driver) {
+//		System.out.println("Exception occured: " + error);
+		/*try {
+			TestUtil.takeScreenshotAtEndOfTest();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}*/
+		
+	}
+	
+	@Override
+	public void beforeClickOn(WebElement element, WebDriver driver) {	
+		// Highlight before clicking on Element. 
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("arguments[0].style.border='3px solid red'", element);
+		
+	}
+	
+	@Override
+	public void onStart(ITestContext context) {
+		System.out.println("WebStaff Execution started");		
+	}
+
+	@Override
+	public void onFinish(ITestContext context) {
+		System.out.println("WebStaff Execution ended");		
+	}
 
 	@Override
 	public void beforeAlertAccept(WebDriver driver) {
@@ -106,22 +155,11 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		
 	}
 
-	@Override
-	public void beforeClickOn(WebElement element, WebDriver driver) {
 	
-		// Highlight before clicking on Element. 
-		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("arguments[0].style.border='3px solid red'", element);
-		
-	}
 
 	@Override
 	public void afterClickOn(WebElement element, WebDriver driver) {
-		
-		// Remove Highlighted after clicking on Element. 
-//			JavascriptExecutor jse = (JavascriptExecutor) driver;
-//			jse.executeScript("arguments[0].style.border=''", element);
-		
+				
 	}
 
 	@Override
@@ -158,40 +196,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	public void afterSwitchToWindow(String windowName, WebDriver driver) {
 		
 		
-	}
-
-	@Override
-	public void onException(Throwable error, WebDriver driver) {
-		System.out.println("Exception occured: " + error);
-		/*try {
-			TestUtil.takeScreenshotAtEndOfTest();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}*/
-		
-	}
-
-	@Override
-	public void onTestStart(ITestResult result) {
-		
-	System.out.println(result.getMethod().getMethodName());
-		
-	}
-
-	@Override
-	public void onTestSuccess(ITestResult result) {
-		System.out.println("Test cases passed");
-		xls.setCellData(sheetname, usernamecolnumber+1, WebStaff_TCExecution.row,"Pass");	
-		xls.setCellData(sheetname, usernamecolnumber, WebStaff_TCExecution.row,System.getProperty("user.name"));
-	}
-
-	@Override
-	public void onTestFailure(ITestResult result) {		
-		System.out.println("Test cases failed");
-		xls.setCellData(sheetname, usernamecolnumber+1, WebStaff_TCExecution.row,"Fail");	
-		xls.setCellData(sheetname, usernamecolnumber, WebStaff_TCExecution.row,System.getProperty("user.name"));
-	
-	}
+	}	
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
@@ -204,20 +209,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		// TODO Auto-generated method stub
 		
 	}
-
-	@Override
-	public void onStart(ITestContext context) {
-
-		System.out.println("WebStaff Execution started");
-		
-	}
-
-	@Override
-	public void onFinish(ITestContext context) {
-		System.out.println("WebStaff Execution ended");
-		
-	}
-
+	
 	@Override
 	public void onConfigurationSuccess(ITestResult itr) {
 		// TODO Auto-generated method stub

@@ -8,6 +8,11 @@ import webstaff.base.TestBase;
 
 public class MiscFunctions extends TestBase{
 	
+	// Initializing Page Objects
+	public MiscFunctions() {
+		PageFactory.initElements(driver, this);
+	}
+	
 	//Top menu options:	
 	//New Link
 	@FindBy(xpath="(//ul[@class='right']/li/a)[1]")
@@ -17,9 +22,13 @@ public class MiscFunctions extends TestBase{
 	@FindBy(xpath="(//a[@data-ng-click='webStaffCtrl.newRegistrant()'])[1]")
 	WebElement Newperson;
 	
+	//New Booking
+	@FindBy(xpath="(//a[@data-ng-click='webStaffCtrl.newBooking()'])[1]")
+	WebElement NewBooking;
+	
 	//Last Reg.ID
 	@FindBy(xpath="(//a[@data-ng-click='webStaffCtrl.previousRegistrant()'])[1]")
-	WebElement lastRegId;
+	public WebElement lastRegId;
 	
 	//Cart Icon
 	@FindBy(xpath="//a[@ng-show='WebStaffShoppingCartIcon.currentRegistrant']")
@@ -36,6 +45,9 @@ public class MiscFunctions extends TestBase{
 	// Popup message 'Yes' button
 	@FindBy(xpath="//button[@class='button success']")
 	WebElement Yes;
+	
+	@FindBy(xpath="//button[contains(.,'Yes')]")
+	WebElement PopUpYes;
 
 	// popup message 'Close' button
 	@FindBy(xpath="//button[@class='button dark']")
@@ -45,9 +57,17 @@ public class MiscFunctions extends TestBase{
 	@FindBy(xpath="//header/button")
 	WebElement X_close;
 	
+	//ShowItemModalWindow close
+	@FindBy(xpath="//button[contains(.,'Close')]")
+	WebElement Close;
+	
 	//popup 'Continue' button
 	@FindBy(xpath="//button[@class='button small dark']")
 	WebElement Continue;	
+	
+ 	//Move To Form Continue button
+	@FindBy(xpath="//button[contains(.,'Continue')]")
+	WebElement Continue_Flow;
 		
 	//Bottom of the page 'Save'
 	@FindBy(xpath="//button[@click-button='formCtrl.save()']")
@@ -61,18 +81,11 @@ public class MiscFunctions extends TestBase{
 	@FindBy(xpath="//button[@class='secondary']")
 	WebElement Undo;
 	
-	// Bottom of the page 'Exit'
+	//Continue button
+	@FindBy(xpath="//button[@class='primary']")
+	WebElement Flow_Continue;
+	
+	// Bottom of the page'Exit'
 	@FindBy(xpath="//button[@class='dark']")
-	WebElement Exit;
-	
-	
-	
-	
-	
-
-	// Initializing Page Objects
-	public MiscFunctions() {
-		PageFactory.initElements(driver, this);
+	WebElement Exit;	
 	}
-
-}
