@@ -14,7 +14,9 @@ import webstaff.pages.PendsPage;
 import webstaff.pages.PeopleSearchPage;
 import webstaff.pages.ShowItemsPage;
 import webstaff.pages.SingleRegInfoPage;
+import webstaff.pages.SummaryPage;
 import webstaff.pages.TransactionPage;
+
 
 @Listeners(webstaff.util.WebEventListener.class)
 public class WebStaff_TCExecution extends TestBase{
@@ -27,6 +29,7 @@ public class WebStaff_TCExecution extends TestBase{
 	TransactionPage transaction;
 	PendsPage pends;
 	ConfirmationPage confirmation;
+	SummaryPage summary;
 		
 	public static int row =0;
 	
@@ -45,6 +48,7 @@ public class WebStaff_TCExecution extends TestBase{
 		transaction = new TransactionPage();
 		pends = new PendsPage();
 		confirmation = new ConfirmationPage();
+		summary = new SummaryPage();
 	}
 	
 	@Test(priority=1)
@@ -89,7 +93,7 @@ public class WebStaff_TCExecution extends TestBase{
 		row=7;
 		Assert.assertTrue(singleRegInfoPage.LastRegId() ,"LastReg ID did not display");
 	}
-	
+	/*
 	@Test(priority=7)
 	public void ReOpenRegisteredRecord() {
 		
@@ -312,7 +316,113 @@ public class WebStaff_TCExecution extends TestBase{
 		
 		row=39;
 		Assert.assertTrue(confirmation.OpenConfirmationWindow());
+	}*/	
+	
+	@Test(priority=39)
+	public void BookingMode() {
+		
+		row=40;
+		Assert.assertEquals(summary.OpenBookingModeSummaryTab(), "Summary");
 	}
+	
+	@Test(priority =40)
+	public void AddNewPerson() {
+		
+		row=41;
+		Assert.assertTrue(summary.NewPersonLink());
+	}
+	
+	@Test(priority=41)
+	public void ClickCreateNewlink() {
+		
+		row=42;
+		Assert.assertTrue(summary.CreateNewPerson());
+	}
+	
+	@Test(priority=42)
+	public void AddExistingPerson() {
+		
+		row=43;
+		Assert.assertEquals(summary.OpenFindImportWindow(),"Find & Import Registrant");
+	}
+	
+	@Test(priority=43)
+	public void EnterAlreadyRegIdAndSearch() {
+		
+		row=44;
+		Assert.assertTrue(summary.SearchExisitingRegId());
+	}
+	
+	@Test(priority=44)
+	public void SelectRegisteredReg() {
+		
+		row=45;	
+		Assert.assertTrue(summary.SelectExistingReg());		
+	}
+	
+	@Test(priority=45)
+	public void VerifyRemoveRegistrant() {
+		
+		row=46;
+		Assert.assertTrue(summary.RemoveRegistrant());
+	}
+			
+	@Test(priority=46)
+	public void VerifySelectContactPerson() {
+		
+		row=47;
+		Assert.assertTrue(summary.AssignContactPerson());		
+	}
+	
+	@Test(priority=47)
+	public void VerifyPreviewConfirmation() {
+		
+		row=48;
+		Assert.assertEquals(summary.ClickEmailIcon(), "Confirmation Preview");
+	}
+	
+	@Test(priority=48)
+	public void VerifySendEmail() {
+		
+		row=49;
+		Assert.assertEquals(summary.SendEmail(), "Confirmation letter has been sent.");
+	}
+	
+	@Test(priority=49)
+	public void VerifyComments() {
+		
+		row=50;
+		Assert.assertEquals(summary.Click_Comments(), "Booking Comments");
+	}
+	
+	@Test(priority=50)
+	public void VerifyCommentTypeURGO() {
+		
+		row=51;
+		Assert.assertEquals(summary.SelectCommentType_URGO(), "URGO");
+	}
+	
+	@Test(priority=51)
+	public void VerifyCommentTypeURGA() {
+		
+		row=52;
+		Assert.assertEquals(summary.SelectCommentType_URGA(), "URGA");
+	}
+	
+	@Test(priority=52)
+	public void VerifyBothCommentTypeURGOnURGA() {
+		
+		row=53;		
+		Assert.assertTrue(summary.All_Occupants("URGA", "URGO"));		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

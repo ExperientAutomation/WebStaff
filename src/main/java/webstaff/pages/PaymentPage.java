@@ -54,7 +54,4 @@ public class PaymentPage extends TestBase {
 	WebElement Continue_but;
 	
 	
-	
-	
-	
 }

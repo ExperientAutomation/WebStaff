@@ -18,6 +18,10 @@ public class MiscFunctions extends TestBase{
 	@FindBy(xpath="(//ul[@class='right']/li/a)[1]")
 	WebElement NewLink;
 	
+	//Search
+	@FindBy(xpath="(//ul[@class='right']/li/a)[2]")
+	WebElement Search;
+	
 	//New Person
 	@FindBy(xpath="(//a[@data-ng-click='webStaffCtrl.newRegistrant()'])[1]")
 	WebElement Newperson;
@@ -41,6 +45,10 @@ public class MiscFunctions extends TestBase{
 	// Toaster message
 	@FindBy(xpath="//div[@ng-class='config.message']/div")
 	WebElement ToasterSuccessMsg;
+	
+	//Toaster Message Close
+	@FindBy(xpath="//button[@class='toast-close-button']")
+	WebElement Toaster_Msg_Close;
 	
 	// Popup message 'Yes' button
 	@FindBy(xpath="//button[@class='button success']")

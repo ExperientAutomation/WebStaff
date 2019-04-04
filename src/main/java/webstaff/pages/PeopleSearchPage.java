@@ -11,6 +11,13 @@ public class PeopleSearchPage extends TestBase{
 	@FindBy(xpath="//button[@type='submit']")
 	WebElement SearchButton;
 	
+	@FindBy(id="regSearch_regID")
+	WebElement RegID;
+	
+	@FindBy(xpath="//h2/button/strong")
+	WebElement RegLink;
+	
+	
 	
 	//Initializing Page Objects
 	public PeopleSearchPage() {
