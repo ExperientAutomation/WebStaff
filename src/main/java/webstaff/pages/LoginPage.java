@@ -15,7 +15,7 @@ public class LoginPage extends TestBase{
 	@FindBy(xpath="//button[@type='submit']")
 	WebElement Loginbutton;
 
-	@FindBy(xpath="//div[@class='input-group-button']")
+	@FindBy(xpath="//exl-select-list-modal[@itemlist='TypeaheadSelectListModal.itemlist']")
 	WebElement QCGroupSelect;
 	
 	@FindBy(xpath="//li[1]/button")
@@ -37,10 +37,16 @@ public class LoginPage extends TestBase{
 	}
 
 	public void SelectQCGroupAndLogin() {
+		
+		try {
 		QCGroupSelect.click();
 		QCHousing.click();
 		Continue.click();
 		Loginbutton.click();
+		Thread.sleep(2000);
+		} catch (InterruptedException e) {		
+			e.printStackTrace();
+		}
 //		return new PeopleSearchPage();
 	}
 	

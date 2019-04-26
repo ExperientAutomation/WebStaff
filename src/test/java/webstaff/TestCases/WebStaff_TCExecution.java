@@ -8,15 +8,18 @@ import org.testng.annotations.Test;
 
 import webstaff.base.TestBase;
 import webstaff.pages.ConfirmationPage;
+import webstaff.pages.ContactsPage;
+import webstaff.pages.FindRoomPage;
 import webstaff.pages.LoginPage;
 import webstaff.pages.MiscFunctions;
+import webstaff.pages.PaymentPage;
 import webstaff.pages.PendsPage;
 import webstaff.pages.PeopleSearchPage;
+import webstaff.pages.ReservationPage;
 import webstaff.pages.ShowItemsPage;
 import webstaff.pages.SingleRegInfoPage;
 import webstaff.pages.SummaryPage;
 import webstaff.pages.TransactionPage;
-
 
 @Listeners(webstaff.util.WebEventListener.class)
 public class WebStaff_TCExecution extends TestBase{
@@ -30,6 +33,10 @@ public class WebStaff_TCExecution extends TestBase{
 	PendsPage pends;
 	ConfirmationPage confirmation;
 	SummaryPage summary;
+	ContactsPage contact;
+	FindRoomPage FindRoom;
+	ReservationPage reserv;
+	PaymentPage payment;
 		
 	public static int row =0;
 	
@@ -49,6 +56,10 @@ public class WebStaff_TCExecution extends TestBase{
 		pends = new PendsPage();
 		confirmation = new ConfirmationPage();
 		summary = new SummaryPage();
+		contact = new ContactsPage();
+		FindRoom = new FindRoomPage();
+		reserv = new ReservationPage();
+		payment = new PaymentPage();
 	}
 	
 	@Test(priority=1)
@@ -93,7 +104,7 @@ public class WebStaff_TCExecution extends TestBase{
 		row=7;
 		Assert.assertTrue(singleRegInfoPage.LastRegId() ,"LastReg ID did not display");
 	}
-	/*
+	
 	@Test(priority=7)
 	public void ReOpenRegisteredRecord() {
 		
@@ -316,7 +327,7 @@ public class WebStaff_TCExecution extends TestBase{
 		
 		row=39;
 		Assert.assertTrue(confirmation.OpenConfirmationWindow());
-	}*/	
+	}
 	
 	@Test(priority=39)
 	public void BookingMode() {
@@ -410,11 +421,204 @@ public class WebStaff_TCExecution extends TestBase{
 	}
 	
 	@Test(priority=52)
-	public void VerifyBothCommentTypeURGOnURGA() {
+	public void VerifyBothCommentTypeURGOnURGA() throws InterruptedException {
 		
 		row=53;		
 		Assert.assertTrue(summary.All_Occupants("URGA", "URGO"));		
+	} 
+	
+	@Test(priority=53)
+	public void VerifyContactTab() {
+		
+		row=54;
+		Assert.assertTrue(contact.ClickContact_tab("Contact Customer"));
 	}
+	
+	@Test(priority=54)
+	public void EnterNewContact() throws InterruptedException {
+		
+		row=55;
+		Assert.assertEquals(contact.New_Contact(), "Contact was successfully saved");
+	} 
+	
+	@Test(priority=55)
+	public void VerifyFindRoomsTab() {
+		
+		row=56;
+		Assert.assertTrue(FindRoom.ClickFindRoomsTab());
+	}
+	
+	@Test(priority=56)
+	public void VerifyViewInventory() {
+		
+		row=57;
+		Assert.assertEquals(FindRoom.ClickOnViewInventory(), "View All Inventory");
+	}
+	
+	@Test(priority=57)
+	public void VerifyFindRooms() {
+		
+		row=58;
+		Assert.assertTrue(FindRoom.ClickFindRooms());		
+	}
+	
+	@Test(priority=58)
+	public void VerifyHoldRoom() {
+		
+		row=59;
+		Assert.assertEquals(FindRoom.ClickHoldRooms(), "1 room(s) were successfully held");
+	}
+	
+	@Test(priority=59)
+	public void VerifyBookRoom() {
+		
+		row=60;
+		Assert.assertTrue(FindRoom.ClickBookRooms());
+	}
+	
+	@Test(priority=60)
+	public void VerifyAddOccupant() {
+		
+		row=61;
+		Assert.assertTrue(reserv.ClickAddOccupant());
+	}
+	
+	@Test(priority=61)
+	public void EnterLeadOccdetails() {
+		
+		row=62;
+		Assert.assertTrue(reserv.EnterLeadOccupant());
+	}
+	
+	@Test(priority=62)
+	public void VerifyDeleteOcc() {
+		
+		row=63;
+		Assert.assertEquals(reserv.ClickDeleteOcc(), "Cannot delete this lead occupant. There are no other occupants in this reservation to assume the lead role.");		
+	}
+	
+	@Test(priority=63)
+	public void VerifyExistingOcc() {
+		
+		row=64;
+		Assert.assertTrue(reserv.SelectExistingReg());			
+	}
+
+	@Test(priority=64)
+	public void VerifyChangeLead() {
+		
+		row=65;
+		Assert.assertTrue(reserv.ChangeLeadOccupant());
+	}
+	
+	@Test(priority=65)
+	public void VerifyEditOccupant() {
+		
+		row=66;
+		Assert.assertTrue(reserv.EditOccupant());		
+	}
+	
+	@Test(priority=66)
+	public void VerifyCancellationPolicy() throws InterruptedException {
+		
+		row=67;		
+		Assert.assertEquals(reserv.ClickCancellationPolicy(), "Cancellation Policy");
+	}
+	
+	@Test(priority=67)
+	public void VerifyChangeDates() {
+		
+		row=68;
+		Assert.assertEquals(reserv.ClickChangeDates(), "Reservation dates were not changed.");		
+	}
+	
+	@Test(priority=68)
+	public void VerifyChangeRoomspopup() {
+		
+		row=69;
+		Assert.assertTrue(reserv.ClickChangeRoom());
+	}
+	
+	@Test(priority=69)
+	public void VerifyChangeRoom() {
+		
+		row=70;
+		Assert.assertEquals(reserv.SelectChangeRoom(),"Reservation successfully changed.");
+	}
+	
+	@Test(priority=70)
+	public void VerifyChangeRatesPopup() {
+		
+		row=71;
+		Assert.assertEquals(reserv.ClickChangeRates(), "Change Room Rates");
+	}
+	
+	@Test(priority=71)
+	public void VerifyChangeRate() {
+		
+		row=72;
+		Assert.assertEquals(reserv.SelectRatePlan(), "Reservation rates were successfully changed.");		
+	}
+ 
+	@Test(priority=72)
+	public void VerifyReleaseRoom() {
+		
+		row=73;
+		Assert.assertEquals(FindRoom.ClickReleaseRoom(), "Room has been sucessfully released.");
+	}
+	
+	@Test(priority=73)
+	public void VerifyHotelCONF() {
+		
+		row=74;
+		Assert.assertEquals(reserv.EnterHotelCONF(), "Hotel Confirmation Number: successfully updated.");
+	}
+	
+	@Test(priority=74)
+	public void VerifyDeposit() throws InterruptedException {
+		
+		row=75;
+		Assert.assertEquals(reserv.EnterDeposit(),"MANUAL $150.00");		
+	}
+	
+	@Test(priority=75)
+	public void VerifySpecialRequest() throws InterruptedException {
+		
+		row=76;
+		Assert.assertTrue(reserv.SelectSpecailRequest());
+	}
+	
+	@Test(priority=76)
+	public void verifyBillingComments() throws InterruptedException {
+		
+		row=77;
+		Assert.assertTrue(reserv.EnterBillingComments());
+	}
+	
+	@Test(priority=77)
+	public void verifyWebComments() throws InterruptedException {
+		
+		row=78;
+		Assert.assertTrue(reserv.EnterWebComments());
+	}
+	
+	@Test(priority=78)
+	public void verifyPaymentTab() {
+		
+		row=79;
+		Assert.assertTrue(payment.ClickPaybutton());
+	}
+	
+	@Test(priority=79)
+	public void verifyAllHousing() throws InterruptedException {
+		
+		row=80;
+		Assert.assertTrue(payment.SelectHousingLink());
+	}
+	
+	
+	
+	
 	
 	
 	

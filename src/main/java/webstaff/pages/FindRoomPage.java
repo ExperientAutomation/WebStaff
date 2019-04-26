@@ -1,20 +1,28 @@
 package webstaff.pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import webstaff.base.TestBase;
+import webstaff.util.TestUtil;
 
 public class FindRoomPage extends TestBase {
-
+	
+	MiscFunctions misc = new MiscFunctions();
+	ReservationPage reserv = new ReservationPage();
+	TestUtil util = new TestUtil();
+	SummaryPage summary = new SummaryPage();
+	
+	
 	// Initializing Page Objects
 	public FindRoomPage() {
 		PageFactory.initElements(driver, this);
 	}
 
 	//FindRooms Tab;
-	@FindBy(xpath = "(//li[@class='tab-title'])[2]")
+	@FindBy(xpath = "//li/a[text()='Find Rooms']")
 	WebElement FindRoomsTab;
 	
 	//Number of Rooms
@@ -28,6 +36,10 @@ public class FindRoomPage extends TestBase {
 	// Find Room
 	@FindBy(xpath="//button[@data-ng-click='$ctrl.find()']")
 	WebElement FindRoom;
+	
+	// Find Rooms Search Result
+	@FindBy(xpath="//h3")
+	WebElement FindRoomSearchReuslt;
 	
 	//Hold Rooms
 	@FindBy(xpath="(//button[@data-ng-click='$ctrl.holdRooms(subBlock, false)'])[1]")
@@ -45,8 +57,86 @@ public class FindRoomPage extends TestBase {
 	@FindBy(xpath="(//dd[@is-open='reservation.isCurrent'])[1]")
 	WebElement Hotel_First_Expand;
 	
+	//Actions:
+	public boolean ClickFindRoomsTab () {
+		
+		/*try {
+		// Debugg script need to delete after completion 		
+		util.mouseover(misc.NewLink);
+		misc.NewLink.click();
+		misc.NewBooking.click();
+		summary.AddNewPerson.click();
+		summary.FindBooking.click();
+		summary.SearchRegID.sendKeys("24094");
+		summary.Search_btn.click();
+		summary.Select_btn.click();
+		summary.Yes_Continue.click();
+		Thread.sleep(2000);
+				
+		// Second REg
+		summary.AddNewPerson.click();
+		summary.FindBooking.click();
+		summary.SearchRegID.sendKeys("24086");
+		summary.Search_btn.click();
+		summary.Select_btn.click();
+		summary.Yes_Continue.click();
+		
+
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}*/
+		
+		FindRoomsTab.click();
+		return  NumberOfRooms.isDisplayed();
+	}
 	
+	public String ClickOnViewInventory() {
+		
+		try {
+		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");	     		
+		ViewInventory.click();		
+		Thread.sleep(3000);		
+		} catch (InterruptedException e) {			
+			e.printStackTrace();
+		}
+		String ViewInventory = misc.popuptitletext.getText();
+		misc.X_close.click();
+		return ViewInventory;
+	}
 	
+	public boolean ClickFindRooms() {
+		
+		FindRoom.click();
+		return FindRoomSearchReuslt.getText().contains("Search Results");
+	}
 	
+	public String ClickHoldRooms() {
+		
+		HoldRoom.click();
+		return misc.ToasterSuccessMsg.getText();				
+	}
+	
+	public boolean ClickBookRooms() {
+		
+		BookRooms.click();
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", reserv.Add_Occupant);
+		return reserv.Add_Occupant.isDisplayed();
+	}
+	
+	public String ClickReleaseRoom() {		
+		
+		try {
+		misc.Toaster_Msg_Close.click();
+		FindRoomsTab.click();
+		BookRooms.click();			
+		Thread.sleep(1000);		
+		misc.Toaster_Msg_Close.click();		
+		Thread.sleep(1000);
+		} catch (InterruptedException e) {			
+			e.printStackTrace();
+		}
+		reserv.ReleaseRoom.click();
+		return misc.ToasterSuccessMsg.getText();		
+	}
 
 }

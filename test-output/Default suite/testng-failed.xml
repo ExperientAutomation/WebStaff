@@ -5,11 +5,8 @@
     <classes>
       <class name="webstaff.TestCases.WebStaff_TCExecution">
         <methods>
-          <include name="VerifyRemoveRegistrant"/>
-          <include name="SingleRegFormVerification"/>
-          <include name="VerifySendEmail"/>
+          <include name="EnterNewContact"/>
           <include name="tearDown"/>
-          <include name="VerifySelectContactPerson"/>
           <include name="setup"/>
         </methods>
       </class> <!-- webstaff.TestCases.WebStaff_TCExecution -->

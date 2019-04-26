@@ -3,6 +3,7 @@ package webstaff.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import webstaff.base.TestBase;
 
@@ -15,9 +16,7 @@ public class PeopleSearchPage extends TestBase{
 	WebElement RegID;
 	
 	@FindBy(xpath="//h2/button/strong")
-	WebElement RegLink;
-	
-	
+	WebElement RegLink;	
 	
 	//Initializing Page Objects
 	public PeopleSearchPage() {
@@ -26,11 +25,9 @@ public class PeopleSearchPage extends TestBase{
 
 	//Actions:	
 	public boolean verifySearchPage() {
+		
+		wait.until(ExpectedConditions.elementToBeClickable(SearchButton));
 		return SearchButton.isDisplayed();
-	}
-	
-	
-	
-	
+	}	
 	
 }

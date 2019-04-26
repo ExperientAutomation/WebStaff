@@ -61,6 +61,10 @@ public class MiscFunctions extends TestBase{
 	@FindBy(xpath="//button[@class='button dark']")
 	WebElement Close_Save;
 	
+	//Change dates 'Save Changes'
+	@FindBy(xpath="//button[contains(.,'Save Changes')]")
+	WebElement Save_Changes;
+	
 	//popup 'X' close
 	@FindBy(xpath="//header/button")
 	WebElement X_close;
@@ -81,6 +85,10 @@ public class MiscFunctions extends TestBase{
 	@FindBy(xpath="//button[@click-button='formCtrl.save()']")
 	WebElement Save;
 	
+	// Change Date Save Button
+	@FindBy(xpath="//button[contains(.,'Save')]")
+	WebElement Save_but;
+	
 	// Bottom of the page 'Payment'
 	@FindBy(xpath="//button[@class='success']")
 	WebElement Payment;
@@ -96,4 +104,13 @@ public class MiscFunctions extends TestBase{
 	// Bottom of the page'Exit'
 	@FindBy(xpath="//button[@class='dark']")
 	WebElement Exit;	
+	
+	//Bottom Pay button
+	@FindBy(xpath="//button[@data-ng-click='formCtrl.displayPaymentControl()']")
+	WebElement Pay;
+	
+	// Cancel popup window button
+	@FindBy(xpath="//button[text()='Cancel']")
+	WebElement Cancel;
+	
 	}

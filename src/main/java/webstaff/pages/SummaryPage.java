@@ -16,7 +16,7 @@ public class SummaryPage extends TestBase {
 	TestUtil util = new TestUtil();
 	
 	String lastRegId=null;
-	String RegID_str =null;
+	public static String RegID_str =null;
 	int regid =0;
 	
 	// Initializing Page Objects
@@ -152,7 +152,6 @@ public class SummaryPage extends TestBase {
 		util.mouseover(misc.NewLink);
 		misc.NewLink.click();
 		misc.NewBooking.click();
-		misc.Yes.click(); // added to run debugging script 
 		return SummaryTab.getText();
 	}
 
@@ -171,6 +170,7 @@ public class SummaryPage extends TestBase {
 		singleRegInfoPage.RegisterAndVerifyBalancePopUp();
 		misc.Close_Save.click();
 		Thread.sleep(2000);		
+		misc.lastRegId.getText().length();
 		lastRegId =misc.lastRegId.getText().substring(6, 11);			
 		} catch (InterruptedException e) {			
 			e.printStackTrace();
@@ -188,8 +188,9 @@ public class SummaryPage extends TestBase {
 	public boolean SearchExisitingRegId() {
 		
 		regid = Integer.parseInt(lastRegId);	
-		regid= regid-1;	
-		RegID_str = Integer.toString(regid);		
+		regid= regid-2;	
+		RegID_str = Integer.toString(regid);	
+		System.out.println("Reg ID-"+RegID_str);
 		SearchRegID.sendKeys(RegID_str);
 		Search_btn.click();
 		wait.until(ExpectedConditions.elementToBeClickable(Select_btn));
@@ -294,21 +295,17 @@ public class SummaryPage extends TestBase {
 		return Comment_Type_Text.getText();		
 	}
 	
-	public boolean All_Occupants(String URGA_exp, String URGO_exp) {
+	public boolean All_Occupants(String URGA_exp, String URGO_exp) throws InterruptedException {
 		
 		Comment_Select_All_Occupants.click();		
+		Thread.sleep(2000);
 		String URGA_text_act = URGA_text.getText();
 		String URGO_text_act = URGO_text.getText();
-		
 		boolean result = false;
 		if ((URGA_text_act.contentEquals(URGA_exp)) && (URGO_text_act.contentEquals(URGO_exp)))
-			result = true;		
+			result = true;	
+		misc.X_close.click();
 		return result;		
-	}
-	
-	
-	
-	
-	
+	}	
 	
 }
