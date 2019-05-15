@@ -7,9 +7,13 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import webstaff.base.TestBase;
+import webstaff.pages.AttendeeGrpSearchPage;
+import webstaff.pages.ConfigurationPage;
 import webstaff.pages.ConfirmationPage;
 import webstaff.pages.ContactsPage;
+import webstaff.pages.ExhibitorSearchPage;
 import webstaff.pages.FindRoomPage;
+import webstaff.pages.HistoryPage;
 import webstaff.pages.LoginPage;
 import webstaff.pages.MiscFunctions;
 import webstaff.pages.PaymentPage;
@@ -20,10 +24,13 @@ import webstaff.pages.ShowItemsPage;
 import webstaff.pages.SingleRegInfoPage;
 import webstaff.pages.SummaryPage;
 import webstaff.pages.TransactionPage;
+import webstaff.util.Email_Send;
+import webstaff.util.XlsUtil;
 
 @Listeners(webstaff.util.WebEventListener.class)
 public class WebStaff_TCExecution extends TestBase{
 	
+	Email_Send email = new Email_Send();
 	LoginPage loginPage;
 	PeopleSearchPage peopleSearchPage;
 	SingleRegInfoPage singleRegInfoPage;	
@@ -37,6 +44,10 @@ public class WebStaff_TCExecution extends TestBase{
 	FindRoomPage FindRoom;
 	ReservationPage reserv;
 	PaymentPage payment;
+	HistoryPage history;
+	ExhibitorSearchPage exhibitorsearch;
+	AttendeeGrpSearchPage attgrp;
+	ConfigurationPage config;
 		
 	public static int row =0;
 	
@@ -46,6 +57,7 @@ public class WebStaff_TCExecution extends TestBase{
 	
 	@BeforeClass
 	public void setup() {
+		
 		initialization();
 		loginPage = new LoginPage();	
 		peopleSearchPage = new PeopleSearchPage();
@@ -60,7 +72,12 @@ public class WebStaff_TCExecution extends TestBase{
 		FindRoom = new FindRoomPage();
 		reserv = new ReservationPage();
 		payment = new PaymentPage();
+		history = new HistoryPage();
+		exhibitorsearch = new ExhibitorSearchPage();
+		attgrp = new AttendeeGrpSearchPage();
+		config= new ConfigurationPage();
 	}
+	
 	
 	@Test(priority=1)
 	public void LoginPageTest() {	
@@ -603,8 +620,8 @@ public class WebStaff_TCExecution extends TestBase{
 	}
 	
 	@Test(priority=78)
-	public void verifyPaymentTab() {
-		
+	public void verifyPaymentTab() throws InterruptedException {
+				
 		row=79;
 		Assert.assertTrue(payment.ClickPaybutton());
 	}
@@ -616,27 +633,196 @@ public class WebStaff_TCExecution extends TestBase{
 		Assert.assertTrue(payment.SelectHousingLink());
 	}
 	
+	@Test(priority=80)
+	public void verifyMakePayment() {
+		
+		
+		row=81;
+		Assert.assertTrue(payment.ClickMakePayment());
+	}
 	
+	@Test(priority=81)
+	public void verifyAddPayment() {
+		
+		row=82;		
+		Assert.assertEquals(payment.ClickAddPayment(), "$150.00");
+	}
 	
+	@Test(priority=82)
+	public void verifyEnterPaymentDetails() throws InterruptedException {		
+		
+		row=83;
+		Assert.assertTrue(payment.EnterPaymentDetails());
+	}
 	
+	@Test(priority=83)
+	public void verifyContinueButt() {
+		
+		row=84;
+		Assert.assertTrue(payment.ClickContinueButton());
+	}
 	
+	@Test(priority=84)
+	public void verifySelectRegLink() throws InterruptedException {
+		
+		row=85;
+		Assert.assertTrue(payment.SelectRegLink());		
+	}
 	
+	@Test(priority=85)
+	public void verifyRegAddPayment() throws InterruptedException {
+		
+		row=86;
+		payment.ClickMakePayment();
+		Assert.assertEquals(payment.ClickAddPayment(), "$500.00");						
+	}
 	
+	@Test(priority=86)
+	public void verifyRegPaymentdetails() throws InterruptedException {
+		
+		row=87;
+		payment.EnterPaymentDetails();
+		Assert.assertTrue(payment.ClickContinueButton());
+	} 
 	
+	@Test(priority=87)
+	public void verifyHistoryTab() throws InterruptedException {		
 	
+		row=88;
+		Assert.assertTrue(history.clickHistory());
+	}
 	
+	@Test(priority=88)
+	public void verifyConfirmation() throws InterruptedException {
+		
+		row=89;
+		Assert.assertTrue(history.SelectConfirmation());
+	}
 	
+	@Test(priority=89)
+	public void verifyReservation() throws InterruptedException {
+		
+		row=90;
+		Assert.assertTrue(history.SelectReservation());
+	}
 	
+	@Test(priority=90)
+	public void verifyRegistrant() throws InterruptedException {
+		
+		row=91;
+		Assert.assertTrue(history.SelectRegistration());
+	}
 	
+	@Test(priority=91)
+	public void verifyGroupAssignment() throws InterruptedException {		
+		
+		row=92;
+		Assert.assertEquals(summary.clickonGroupAssignment(), "Registrant Group Assignment");
+	}
 	
+	@Test(priority=92)
+	public void VerifySearchandSelectRegGrp() {
+		
+		row=93;
+		Assert.assertTrue(summary.SearchExhibitorGroup());
+	}
 	
+	@Test(priority=93)
+	public void verifyRemoveRegGrp() throws InterruptedException {
+		
+		row=94;
+		Assert.assertFalse(summary.ClickRemoveExhibitor());
+	}
 	
+	@Test(priority=94)
+	public void verifyExitAndConfirmationWindow() throws InterruptedException {
+		
+		row=95;
+		Assert.assertTrue(summary.ClickExit());
+	}
 	
+	@Test(priority=95)
+	public void verifySearchReturn() {
+		
+		row=96;
+		Assert.assertTrue(summary.ClickContinueButton());
+	}
+	
+	@Test(priority=96)
+	public void verifySearchPage() {	
+		
+		row=97;
+		Assert.assertTrue(peopleSearchPage.EnterRegId(SummaryPage.RegID_str));	
+	}
+	
+	@Test(priority=97)
+	public void verifyExhibitorSearch() {
+		
+		row=98;
+		Assert.assertTrue(exhibitorsearch.ExhibitorSearch());
+	}
+	
+	@Test(priority=98)
+	public void verifyEnterExhibitorSearch() {
+		
+		row=99;
+		Assert.assertTrue(exhibitorsearch.EnterExhibitorSearch());
+	} 
+	
+	@Test(priority=99)
+	public void verifyAttendeeSearch() {				
+		
+		row=100;
+		Assert.assertTrue(attgrp.AttendeeSearch());
+	}
+	
+	@Test(priority=100)
+	public void verifyEnterAttendeeGrp() {
+		
+		row=101;
+		Assert.assertTrue(attgrp.EnterAttendeeGrp());
+	}
+	
+	@Test(priority=101)
+	public void verifyGlobalConfigpage() {	
+		
+		row=102;
+		Assert.assertTrue(config.ClickGlobalConfig());
+	}
+	
+	@Test(priority=102)
+	public void verifyGlobalSettings() {
+		
+		row=103;
+		Assert.assertTrue(config.SelectGlobalConfig());		
+	}
+	
+	@Test(priority=103)
+	public void verifyWorkstationPage() {		
+				
+		row=104;
+		Assert.assertTrue(config.ClickWorkstationConfig());
+	}
+	
+	@Test(priority=104)
+	public void verifyWorkstation() {
+		
+		row=105;
+		Assert.assertTrue(config.EnterWorkStationDetial());
+	}	
+	
+	@Test(priority=105)
+	public void verifyLogOut() {
+		
+		row=106;
+		Assert.assertTrue(config.ClickOnLogOut());
+	}
 	
 	@AfterSuite
 	public void tearDown() {
 //		driver.get(System.getProperty("user.dir")+ "\\Report\\ReportSummary.html");
 //		driver.quit();
+		email.sendEmail(XlsUtil.path);	
 	}
 	
 

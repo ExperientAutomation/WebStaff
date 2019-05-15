@@ -2,6 +2,7 @@ package webstaff.base;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -65,5 +66,22 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.IMPLICIT_WAIT,TimeUnit.SECONDS);
 		wait = new WebDriverWait(driver, TestUtil.PAGE_LOAD_TIMEOUT);
 		driver.get(prop.getProperty("url"));
+	}
+
+	public String LoginCredentails(String key) {
+
+		String path = "N:\\QA\\R&DQA\\Selenium\\GlobalCredentials\\LoginCredentials.properties";
+
+		FileReader fio;
+		Properties objRepoProp = null;
+		try {
+			fio = new FileReader(path);
+			objRepoProp = new Properties();
+			objRepoProp.load(fio);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return objRepoProp.getProperty(key);
 	}
 }

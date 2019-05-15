@@ -15,8 +15,8 @@ import webstaff.base.TestBase;
 
 public class TestUtil extends TestBase {
 	
-	public static long PAGE_LOAD_TIMEOUT = 30;
-	public static long IMPLICIT_WAIT = 30;
+	public static long PAGE_LOAD_TIMEOUT = 60;
+	public static long IMPLICIT_WAIT = 60;
 	
 	// Method to TakeScreenshot
 	public static void takeScreenshotAtEndOfTest() throws IOException {
@@ -36,7 +36,12 @@ public class TestUtil extends TestBase {
 	public String SelectItem(WebElement select, String itemName) {
 		
 		Select sc = new Select(select);
-		sc.selectByValue(itemName);		
+		sc.selectByValue(itemName);	
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {	
+			e.printStackTrace();
+		}
 		return sc.getFirstSelectedOption().getText();
 	}	
 }

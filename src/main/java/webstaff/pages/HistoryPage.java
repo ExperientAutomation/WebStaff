@@ -69,7 +69,7 @@ public class HistoryPage extends TestBase {
 		
 		util.SelectItem(DropDownList, "string:REGISTRANT");
 		Thread.sleep(2000);
-		return  Sort_ID_text.getText().equals(" Registrant ID");
+		return  Sort_ID_text.getText().equals("Registrant ID");
 	}
 	
 	

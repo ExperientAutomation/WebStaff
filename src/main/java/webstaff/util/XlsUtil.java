@@ -35,7 +35,6 @@ public class XlsUtil extends TestBase {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
 	
 	public int getRowCount(String sheetName){
@@ -48,7 +47,6 @@ public class XlsUtil extends TestBase {
 		int number=sheet.getLastRowNum()+1;
 		return number;
 		}
-		
 	}
 
 	// returns the data from a cell

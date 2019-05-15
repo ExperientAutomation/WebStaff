@@ -60,32 +60,6 @@ public class FindRoomPage extends TestBase {
 	//Actions:
 	public boolean ClickFindRoomsTab () {
 		
-		/*try {
-		// Debugg script need to delete after completion 		
-		util.mouseover(misc.NewLink);
-		misc.NewLink.click();
-		misc.NewBooking.click();
-		summary.AddNewPerson.click();
-		summary.FindBooking.click();
-		summary.SearchRegID.sendKeys("24094");
-		summary.Search_btn.click();
-		summary.Select_btn.click();
-		summary.Yes_Continue.click();
-		Thread.sleep(2000);
-				
-		// Second REg
-		summary.AddNewPerson.click();
-		summary.FindBooking.click();
-		summary.SearchRegID.sendKeys("24086");
-		summary.Search_btn.click();
-		summary.Select_btn.click();
-		summary.Yes_Continue.click();
-		
-
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}*/
-		
 		FindRoomsTab.click();
 		return  NumberOfRooms.isDisplayed();
 	}

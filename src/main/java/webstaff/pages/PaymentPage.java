@@ -1,5 +1,6 @@
 package webstaff.pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -55,7 +56,7 @@ public class PaymentPage extends TestBase {
 	WebElement Payor;
 	
 	//CC Number
-	@FindBy(id="ctl00_ContentMain_CreditCardControl1_RequiredFieldValidatorCreditCardNumber")
+	@FindBy(id="ctl00_ContentMain_CreditCardControl1_TextBoxAccountNumber")				
 	WebElement CC_Number;
 	
 	//Exp Date
@@ -80,25 +81,31 @@ public class PaymentPage extends TestBase {
 	public boolean SelectHousingLink() throws InterruptedException {
 		
 		AllHousingLink.click();
-		Thread.sleep(2000);
-		return Reservation_chkbox.getAttribute("checked").equals("checked");		
+//		wait.until(ExpectedConditions.elementToBeClickable(Reservation_chkbox));
+		Thread.sleep(2000);			
+		return Reservation_chkbox.isSelected();
 	}
 	
 	public boolean ClickMakePayment() {
 		
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", MakePayment);
 		MakePayment.click();
 		return misc.popuptitletext.getText().equals("Apply Payment");
 	}
 	
 	public String ClickAddPayment() {
 		
-		wait.until(ExpectedConditions.visibilityOf(Payor));
-		return AmtDue.getText();//("$150.00");
+		Add_Payment.click();
+		wait.until(ExpectedConditions.elementToBeClickable(Payor));
+		return AmtDue.getText();
 	}
 	
-	public boolean EnterPaymentDetails() {
+	public boolean EnterPaymentDetails() throws InterruptedException {
 		
+		Thread.sleep(2000);
 		util.SelectItem(Payor, "Occupant Edit");
+		Thread.sleep(2000);
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Payor);
 		CC_Number.sendKeys("4111111111111111");
 		util.SelectItem(Exp_Date, "25");
 		Submit_Payment.click();
@@ -116,9 +123,6 @@ public class PaymentPage extends TestBase {
 		
 		AllReg.click();
 		Thread.sleep(2000);
-		return Reg_chkbox.getAttribute("checked").contentEquals("checked");
-	}
-	
-	
-	
+		return Reg_chkbox.isSelected();
+	}	
 }

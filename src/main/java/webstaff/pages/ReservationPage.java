@@ -400,12 +400,12 @@ public class ReservationPage extends TestBase {
 	public boolean SelectSpecailRequest() throws InterruptedException {
 		
 		SpecailRequest_Edit.click();
-		String selectedtext = util.SelectItem(Bedding_Type, "TWO");
+		String selectedtext = util.SelectItem(Bedding_Type, "KING");
 		Sp_Comments.sendKeys("Test Request");
 		misc.Yes.click();
 		Thread.sleep(2000);
 		SpecailRequest_Edit.click();		
-		return selectedtext.contains("TWO");
+		return selectedtext.contains("KING");
 	}
 	
 	public boolean EnterBillingComments() throws InterruptedException {

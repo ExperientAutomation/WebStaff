@@ -5,7 +5,8 @@
     <classes>
       <class name="webstaff.TestCases.WebStaff_TCExecution">
         <methods>
-          <include name="EnterNewContact"/>
+          <include name="ClickCreateNewlink"/>
+          <include name="verifyRegAddPayment"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>

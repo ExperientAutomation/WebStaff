@@ -25,7 +25,7 @@ public class SummaryPage extends TestBase {
 	}
 	
 	//Summary Tab
-	@FindBy(xpath="//li[@class='tab-title active']")
+	@FindBy(xpath="//li[@ui-sref='summary']")
 	WebElement SummaryTab;
 	
 	//Add new Person
@@ -48,19 +48,26 @@ public class SummaryPage extends TestBase {
 	@FindBy(xpath="(//a[@data-ng-click='::$ctrl.editRegistrant(r.registrant)'])[3]")
 	WebElement RegIdTwo;
 	
+	@FindBy(xpath="(//button[@data-ng-click='$ctrl.editRegistrant(registrant, $event)'])[2]")
+	WebElement RegIDText;
+	
+	// Edit Booking
+	@FindBy(xpath="//button[@data-ng-click='$ctrl.editBooking(registrant, $event)']")
+	public WebElement BookingID;
+	
 	//Search Reg ID
 	@FindBy(id="regSearch_regID")
-	WebElement SearchRegID;
+	public WebElement SearchRegID;
 	
 	//Search Button
 	@FindBy(xpath="//button[@data-ng-click='submitButton.clickButtonFn()']")
-	WebElement Search_btn;
+	public WebElement Search_btn;
 	
 	//Select Button
 	@FindBy(xpath="//button[@data-ng-if='$ctrl.regSelected']")
 	WebElement Select_btn;
 	
-	// Yes Continue button
+	//Yes Continue button
 	@FindBy(xpath="//button[contains(.,'Yes, continue')]")
 	WebElement Yes_Continue;
 	
@@ -72,7 +79,7 @@ public class SummaryPage extends TestBase {
 	@FindBy(xpath="(//span[@data-ng-click='$ctrl.setContact($event, r)'])/i[1]")
 	WebElement SelectContact;
 	
-	// Preview Email Icon
+	//Preview Email Icon
 	@FindBy(xpath="(//button[@class='empty icon-button'])[1]")
 	WebElement EmailIcon;
 	
@@ -135,17 +142,29 @@ public class SummaryPage extends TestBase {
 	WebElement Group_sel;
 	
 	//Registrant Group Assignment
-	@FindBy(xpath="(//td/button[@data-ng-click='modalCtrl.selectRegistrantGroup(registrantGroup)'])[1]")
-	WebElement Group_Reg_Select;
+	@FindBy(xpath="//button[@data-ng-click='$ctrl.assignRegistrantGroup()']")
+	WebElement Group_Reg_List;
 	
+	//Registrant Group Search
+	@FindBy(xpath="//input[@ng-model='modalCtrl.keyword']")
+	WebElement Group_Search;	
+	
+	// Select Reg. Group Assignment
+	@FindBy(xpath="//button[@data-ng-click='modalCtrl.selectRegistrantGroup(registrantGroup)']")
+	WebElement Exhibitor_Select;
+
 	//Exhibitor Company Name
-	@FindBy(xpath="//input[@data-ng-model='$ctrl.summary.registrantGroup.groupName']")
+	@FindBy(xpath="//input[@data-ng-model='$ctrl.summary.exhibitingCompany.company']")
 	WebElement Exhibitor_Name;
 	
 	// Remove Exhibitor Link
 	@FindBy(xpath="//a[@class='button tiny']")
 	WebElement Remove_Exh_Link;
-		
+	
+	//Booking Confirmation Window
+	@FindBy(xpath="//li[@data-ng-if='$ctrl.validations.hasConfirmations']")
+	WebElement ConfirmationText;
+			
 	//Actions:
 	public String OpenBookingModeSummaryTab() {		
 		
@@ -175,7 +194,7 @@ public class SummaryPage extends TestBase {
 		} catch (InterruptedException e) {			
 			e.printStackTrace();
 		}
-		return lastRegId.contentEquals(RegId.getText());
+		return lastRegId.contentEquals(RegId.getText().trim());
 	}
 	
 	public String OpenFindImportWindow() {
@@ -187,7 +206,8 @@ public class SummaryPage extends TestBase {
 	
 	public boolean SearchExisitingRegId() {
 		
-		regid = Integer.parseInt(lastRegId);	
+//		regid = Integer.parseInt(lastRegId);	
+		regid = Integer.parseInt(RegId.getText().trim());
 		regid= regid-2;	
 		RegID_str = Integer.toString(regid);	
 		System.out.println("Reg ID-"+RegID_str);
@@ -308,4 +328,38 @@ public class SummaryPage extends TestBase {
 		return result;		
 	}	
 	
+	public String clickonGroupAssignment() {
+		
+		SummaryTab.click();
+		Group_Reg_List.click();
+		return misc.popuptitletext.getText();
+	}
+	
+	public boolean SearchExhibitorGroup() {
+		
+		Group_Search.sendKeys("Exhibitor-");
+		Exhibitor_Select.click();
+		return Exhibitor_Name.isDisplayed();
+	}
+	
+	public boolean ClickRemoveExhibitor() throws InterruptedException {
+		
+		Remove_Exh_Link.click();
+		misc.Yes.click();
+		Thread.sleep(2000);
+		return driver.findElements(By.xpath("//input[@data-ng-model='$ctrl.summary.exhibitingCompany.company']")).size()>0;
+	}
+	
+	public boolean ClickExit() throws InterruptedException {
+		
+		misc.Exit.click();
+		Thread.sleep(2000);
+		return ConfirmationText.getText().trim().contains("Confirmations will be sent to individuals with the send flag checked");
+	}
+	
+	public boolean ClickContinueButton() {
+		
+		misc.Continue_Flow.click();
+		return Search_btn.isDisplayed();
+	}	
 }

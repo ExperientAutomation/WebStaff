@@ -270,6 +270,7 @@ public class SingleRegInfoPage extends TestBase {
 		System.out.println("Registered ID-"+RegisteredIDText.getText().substring(8, 12));
 		return misc.lastRegId.getText().substring(6, 10)
 				.equalsIgnoreCase(RegisteredIDText.getText().substring(8, 12));
+		
 	}
 	
 	public String ClickOnGuestLink() {

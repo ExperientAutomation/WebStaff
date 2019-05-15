@@ -19,14 +19,12 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	public final int expectedresultcolnumber =4;
 	
 	XlsUtil xls = new XlsUtil();
-	WebStaff_TCExecution WebStaff_test = new WebStaff_TCExecution (); 
+	Email_Send email = new Email_Send();
 	String sheetname = "WebStaff_TC";
 	
 	@Override
-	public void onTestStart(ITestResult result) {
-		
-	System.out.println(result.getMethod().getMethodName());
-		
+	public void onTestStart(ITestResult result) {		
+	System.out.println(result.getMethod().getMethodName());		
 	}
 
 	@Override
@@ -59,8 +57,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	public void beforeClickOn(WebElement element, WebDriver driver) {	
 		// Highlight before clicking on Element. 
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("arguments[0].style.border='3px solid red'", element);
-		
+		jse.executeScript("arguments[0].style.border='3px solid red'", element);		
 	}
 	
 	@Override
@@ -70,7 +67,8 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 
 	@Override
 	public void onFinish(ITestContext context) {
-		System.out.println("WebStaff Execution ended");		
+		System.out.println("WebStaff Execution ended");	
+		email.sendEmail(XlsUtil.path);		
 	}
 
 	@Override
@@ -200,31 +198,31 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		// TODO Auto-generated method stub
+
 		
 	}
 	
 	@Override
 	public void onConfigurationSuccess(ITestResult itr) {
-		// TODO Auto-generated method stub
+	
 		
 	}
 
 	@Override
 	public void onConfigurationFailure(ITestResult itr) {
-		// TODO Auto-generated method stub
+
 		
 	}
 
 	@Override
 	public void onConfigurationSkip(ITestResult itr) {
-		// TODO Auto-generated method stub
+
 		
 	}
 
