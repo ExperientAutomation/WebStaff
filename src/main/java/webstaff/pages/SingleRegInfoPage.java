@@ -206,15 +206,16 @@ public class SingleRegInfoPage extends TestBase {
 
 		try {
 			ChangeFlow.click();
+			Thread.sleep(2000);
 			Flows_List.findElement(By.xpath("//div[text()='"+prop.getProperty("AttendeeFlow")+"']")).click();
 			misc.Flow_Continue.click();
 			Thread.sleep(2000);		
 			wait.until(ExpectedConditions.elementToBeClickable(misc.Yes));
 			misc.Yes.click(); 
+			Thread.sleep(2000);		
 		} catch (Exception e) {			
 			e.printStackTrace();
-		}
-		
+		}		
 		return RegType.isDisplayed();
 	}
 

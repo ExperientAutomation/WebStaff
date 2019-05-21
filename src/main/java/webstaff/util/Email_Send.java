@@ -32,20 +32,21 @@ public class Email_Send extends TestBase {
 		props.put("mail.smtp.host", "smtp2.expoexchange.com");
 		props.put("mail.smtp.port", "25");
 
-		Session session = Session.getInstance(props, new javax.mail.Authenticator() {
-			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication(username, password);
-			}
-		});
+		Session session = Session.getInstance(props,
+				new javax.mail.Authenticator() {
+					protected PasswordAuthentication getPasswordAuthentication() {
+						return new PasswordAuthentication(username, password);
+					}
+				});
 
 		try {
 
 			Message message = new MimeMessage(session);
 			message.setFrom(new InternetAddress(username));
-	
-//			 message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("sreejak@infinite.com,Chandrasekhar.Kulandasamy@experient-inc.com,Sirasanambati.Anudeep@infinite.com"));
-			message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("Chandrasekhar.Kulandasamy@experient-inc.com"));
-			
+
+			// message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("sreejak@infinite.com,Chandrasekhar.Kulandasamy@experient-inc.com,Sirasanambati.Anudeep@infinite.com"));
+			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("Chandrasekhar.Kulandasamy@experient-inc.com"));
+
 			message.setSubject("WebStaff Automation execution Report");
 
 			BodyPart messageBodyPart = new MimeBodyPart();
@@ -53,7 +54,7 @@ public class Email_Send extends TestBase {
 			Multipart multipart = new MimeMultipart();
 
 			messageBodyPart = new MimeBodyPart();
-			String file = excelsheetfilePath;
+			String file = XlsUtil.path;
 			String fileName = "Automation Test test cases for WebStaff.xlsx";
 			DataSource source = new FileDataSource(file);
 			attachmentPart.setDataHandler(new DataHandler(source));
@@ -75,9 +76,8 @@ public class Email_Send extends TestBase {
 				html = "<p>Hi,</p><p>PFA the Automation Test report.</p><p>Note: There is one failure.. </p><p>Thanks,</p><p>Chandra</p>";
 				System.out.println("One Failer");
 			} else {
-				html = "<p>Hi,</p><p>PFA the Automation Test report.</p><p>Note: There are " + count
-						+ " failures.. </p><p>Thanks,</p><p>Chandra</p>";
-				System.out.println("More failers "+count);
+				html = "<p>Hi,</p><p>PFA the Automation Test report.</p><p>Note: There are "+ count	+ " failures.. </p><p>Thanks,</p><p>Chandra</p>";
+				System.out.println("More failers " + count);
 			}
 
 			messageBodyPart.setContent(html, "text/html");

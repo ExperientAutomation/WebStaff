@@ -93,11 +93,11 @@ public class PaymentPage extends TestBase {
 		return misc.popuptitletext.getText().equals("Apply Payment");
 	}
 	
-	public String ClickAddPayment() {
+	public boolean ClickAddPayment() {
 		
 		Add_Payment.click();
 		wait.until(ExpectedConditions.elementToBeClickable(Payor));
-		return AmtDue.getText();
+		return AmtDue.isDisplayed();
 	}
 	
 	public boolean EnterPaymentDetails() throws InterruptedException {

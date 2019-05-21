@@ -25,7 +25,6 @@ import webstaff.pages.SingleRegInfoPage;
 import webstaff.pages.SummaryPage;
 import webstaff.pages.TransactionPage;
 import webstaff.util.Email_Send;
-import webstaff.util.XlsUtil;
 
 @Listeners(webstaff.util.WebEventListener.class)
 public class WebStaff_TCExecution extends TestBase{
@@ -95,35 +94,35 @@ public class WebStaff_TCExecution extends TestBase{
 	}
 	
 	@Test(priority=3)
-	public void SingleRegFormVerification() {
+	public void VerifySingleRegForm() {
 		
 		row=4;
 		Assert.assertTrue(singleRegInfoPage.VerifyNewRegForm(), "Single Reg Form page did not displayed");
 	}
 	
 	@Test(priority=4)
-	public void ChangeRegForm() {
+	public void VerifyChangeRegForm() {
 		
 		row=5;
 		Assert.assertTrue(singleRegInfoPage.ChangeFlow(), "The selected Attendee flow did not display");		
 	}
 	
 	@Test(priority=5)
-	public void RegisterRecord() {
+	public void VerifyRegisterRecord() {
 		
 		row=6;
 		Assert.assertEquals(singleRegInfoPage.RegisterAndVerifyBalancePopUp(), "Balance/Refund Due Check","Balance popup message did not display");
 	}
 	
 	@Test(priority=6)
-	public void LastRegIDTest() {
+	public void VerifyLastRegIDTest() {
 		
 		row=7;
 		Assert.assertTrue(singleRegInfoPage.LastRegId() ,"LastReg ID did not display");
 	}
 	
 	@Test(priority=7)
-	public void ReOpenRegisteredRecord() {
+	public void VerifyReOpenRegisteredRecord() {
 		
 		row=8;
 		Assert.assertTrue(singleRegInfoPage.clickOnLastRegId());
@@ -137,7 +136,7 @@ public class WebStaff_TCExecution extends TestBase{
 	}
 	
 	@Test(priority=9)
-	public void EnterGuestAndSave() {
+	public void VerifyEnterGuestAndSave() {
 		
 		row=10;
 		Assert.assertTrue(singleRegInfoPage.EnterGuestNameAndSave());
@@ -151,21 +150,21 @@ public class WebStaff_TCExecution extends TestBase{
 	}
 	
 	@Test(priority=11)
-	public void OpenShowItems() {
+	public void VerifyOpenShowItems() {
 		
 		row=12;
 		Assert.assertEquals(showitem.ClickOnShowItemTab(), "Shop for ShowItems");
 	}
 	
 	@Test(priority=12)
-	public void SearchShowItem() {
+	public void VerifySearchShowItem() {
 		
 		row=13;
 		Assert.assertEquals(showitem.SearchShowItem(), "ESP1 - ESP: Billy Wilder - Sunset Boulevard");
 	}
 	
 	@Test(priority=13)
-	public void AddShowItemsToCart() {
+	public void VerifyAddShowItemsToCart() {
 		
 		row=14;
 		Assert.assertEquals(showitem.AddShowItem(), "ESP1 - ESP: Billy Wilder - Sunset Boulevard added.");		
@@ -186,70 +185,70 @@ public class WebStaff_TCExecution extends TestBase{
 	}
 	
 	@Test(priority=16)
-	public void OpenBadgeFields() {
+	public void VerifyOpenBadgeFields() {
 		
 		row=17;
 		Assert.assertEquals(singleRegInfoPage.ClickBadgeLink(), "Badge Fields");		
 	}
 	
 	@Test(priority=17)
-	public void EnterBadgeFields() {
+	public void VerifyEnterBadgeFields() {
 		
 		row=18;
 		Assert.assertTrue(singleRegInfoPage.EnterBadgeFieldsAndSave());
 	}
 	
 	@Test(priority=18)
-	public void OpenSpecailAccModal() {
+	public void VerifyOpenSpecailAccModal() {
 		
 		row=19;
 		Assert.assertEquals(singleRegInfoPage.ClickSpecialAcc(), "Special Accommodations");
 	}
 	
 	@Test(priority=19)
-	public void EnterSpecialAcc() {
+	public void VerifyvEnterSpecialAcc() {
 		
 		row=20;
 		Assert.assertTrue(singleRegInfoPage.EnterSpecailAcc());
 	}
 	
 	@Test(priority=20)
-	public void OpenNoteWindow() {
+	public void VerifyOpenNoteWindow() {
 		
 		row=21;
 		Assert.assertEquals(singleRegInfoPage.ClickNoteLink(), "Special Information");
 	}
 	
 	@Test(priority=21)
-	public void EnterSpecailNotes() {
+	public void VerifyEnterSpecailNotes() {
 		
 		row=22;
 		Assert.assertTrue(singleRegInfoPage.EnterNotes());
 	}
 	
 	@Test(priority=22)
-	public void OpenMoveToForm() {
+	public void VerifyOpenMoveToForm() {
 		
 		row=23;
 		Assert.assertEquals(singleRegInfoPage.ClickMoveToForm(), "Move Registrant To Form");
 	}
 	
 	@Test(priority=23)
-	public void ChangeFlowToExhibitor() {
+	public void VerifyChangeFlowToExhibitor() {
 		
 		row=24;
 		Assert.assertEquals(singleRegInfoPage.ChangeForm(), "Find Company");
 	}
 	
 	@Test(priority=24)
-	public void UndoChanges() {
+	public void VerifyUndoChanges() {
 		
 		row=25;
 		Assert.assertEquals(singleRegInfoPage.ClickUndo(), "Member Lookup");
 	}
 	
 	@Test(priority=25)
-	public void RuleOverrides() {
+	public void VerifyRuleOverrides() {
 		
 		row=26;
 		Assert.assertEquals(singleRegInfoPage.OpenRuleOverrides(), "Rule Override");
@@ -263,14 +262,14 @@ public class WebStaff_TCExecution extends TestBase{
 	}
 	
 	@Test(priority=27)
-	public void ResetLink() {
+	public void verifyResetLink() {
 		
 		row=28;
 		Assert.assertEquals(singleRegInfoPage.ClickOnResetLink(), "The password reset message was successfully sent to your email.");
 	}
 	
 	@Test(priority=28)
-	public void CancelRecordWindow() {
+	public void verifyCancelRecordWindow() {
 		
 		row=29;
 		Assert.assertEquals(singleRegInfoPage.ClickOnCancel(), "Cancellation Options");
@@ -284,14 +283,14 @@ public class WebStaff_TCExecution extends TestBase{
 	}
 	
 	@Test(priority=30)
-	public void UnCancelRecordPopupMsg() {
+	public void VerifyUnCancelRecordPopupMsg() {
 		
 		row=31;
 		Assert.assertEquals(singleRegInfoPage.UnCancelRecordPopUpMsg(), "Cancelled Registrant");		
 	}
 	
 	@Test(priority=31)
-	public void UnCancelAndSave() {
+	public void VerifyUnCancelAndSave() {
 		
 		row=32;
 		Assert.assertTrue(singleRegInfoPage.UnCancelRecord());		
@@ -645,7 +644,7 @@ public class WebStaff_TCExecution extends TestBase{
 	public void verifyAddPayment() {
 		
 		row=82;		
-		Assert.assertEquals(payment.ClickAddPayment(), "$150.00");
+		Assert.assertTrue(payment.ClickAddPayment());				
 	}
 	
 	@Test(priority=82)
@@ -674,7 +673,7 @@ public class WebStaff_TCExecution extends TestBase{
 		
 		row=86;
 		payment.ClickMakePayment();
-		Assert.assertEquals(payment.ClickAddPayment(), "$500.00");						
+		Assert.assertTrue(payment.ClickAddPayment());							
 	}
 	
 	@Test(priority=86)
@@ -819,10 +818,10 @@ public class WebStaff_TCExecution extends TestBase{
 	}
 	
 	@AfterSuite
-	public void tearDown() {
+	public void tearDown() throws InterruptedException {
+		
 //		driver.get(System.getProperty("user.dir")+ "\\Report\\ReportSummary.html");
-//		driver.quit();
-		email.sendEmail(XlsUtil.path);	
+//		driver.quit();		
 	}
 	
 

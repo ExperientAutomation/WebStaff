@@ -1,122 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="webstaff.util.ExtentReporterNG"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="webstaff.TestCases.WebStaff_TCExecution">
         <methods>
-          <include name="VerifyDeposit"/>
-          <include name="verifySearchReturn"/>
-          <include name="VerifySpecialRequest"/>
-          <include name="verifyRegAddPayment"/>
-          <include name="tearDown"/>
-          <include name="verifyHistoryTab"/>
-          <include name="VerifyCancelledText"/>
-          <include name="OpenNoteWindow"/>
-          <include name="QCGroupselectAndLoginPage"/>
-          <include name="verifyWorkstationPage"/>
-          <include name="VerifyCommentTypeURGA"/>
-          <include name="VerifyChangeRatesPopup"/>
-          <include name="verifyEnterPaymentDetails"/>
-          <include name="VerifyCommentTypeURGO"/>
-          <include name="VerifyShowItemTab"/>
-          <include name="verifyExhibitorSearch"/>
-          <include name="VerifyTransactionTab"/>
-          <include name="VerifyViewInventory"/>
-          <include name="OpenBadgeFields"/>
-          <include name="VerifyHotelCONF"/>
-          <include name="VerifyGuestLabel"/>
-          <include name="verifyConfirmation"/>
-          <include name="EnterBadgeFields"/>
-          <include name="verifyWebComments"/>
-          <include name="VerifyHoldRoom"/>
-          <include name="SelectPendTypeList"/>
-          <include name="VerifyRemoveRegistrant"/>
-          <include name="EnterSpecailNotes"/>
-          <include name="VerifyInCart"/>
-          <include name="VerifySelectContactPerson"/>
-          <include name="verifyContinueButt"/>
-          <include name="verifyLogOut"/>
-          <include name="EnterLeadOccdetails"/>
-          <include name="RuleOverrides"/>
-          <include name="VerifyFindRooms"/>
-          <include name="EnterGuestTest"/>
-          <include name="VerifyReleaseRoom"/>
-          <include name="VerifyPreviewConfirmation"/>
           <include name="EnterNewContact"/>
-          <include name="AddNewPerson"/>
-          <include name="VerifyChangeRoom"/>
-          <include name="verifyRegistrant"/>
-          <include name="UnCancelRecordPopupMsg"/>
-          <include name="ReOpenRegisteredRecord"/>
-          <include name="LoginPageTest"/>
-          <include name="VerifyChangeRate"/>
-          <include name="VerifyEditOccupant"/>
-          <include name="VerifyConfirmationPreviewWindow"/>
-          <include name="VerifyBothCommentTypeURGOnURGA"/>
-          <include name="VerifyChangeDates"/>
-          <include name="verifyReservation"/>
-          <include name="VerifyPendResolved"/>
-          <include name="CancelRecordWindow"/>
-          <include name="verifyMakePayment"/>
-          <include name="BookingMode"/>
-          <include name="verifyRegPaymentdetails"/>
-          <include name="OpenPendsTab"/>
-          <include name="EnterSpecialAcc"/>
-          <include name="verifyWorkstation"/>
-          <include name="RegisterRecord"/>
+          <include name="tearDown"/>
+          <include name="VerifyFindRooms"/>
+          <include name="VerifyViewInventory"/>
           <include name="setup"/>
-          <include name="ChangeRegForm"/>
-          <include name="ResetLink"/>
-          <include name="AddShowItemsToCart"/>
-          <include name="OpenShowItems"/>
-          <include name="EnterGuestAndSave"/>
-          <include name="OpenSpecailAccModal"/>
-          <include name="VerifyChangeRoomspopup"/>
-          <include name="VerifyExistingOcc"/>
-          <include name="verifyAllHousing"/>
-          <include name="VerifyContactTab"/>
-          <include name="verifyAttendeeSearch"/>
-          <include name="LastRegIDTest"/>
-          <include name="UnCancelAndSave"/>
-          <include name="OpenConfirmationTab"/>
-          <include name="verifySelectRegLink"/>
-          <include name="verifyAddPayment"/>
-          <include name="verifyEnterAttendeeGrp"/>
-          <include name="VerifyAddOccupant"/>
-          <include name="verifyGroupAssignment"/>
-          <include name="verifyPaymentTab"/>
-          <include name="ClickCreateNewlink"/>
-          <include name="VerifyShowItemTabTest"/>
-          <include name="EnterAlreadyRegIdAndSearch"/>
-          <include name="verifyExitAndConfirmationWindow"/>
-          <include name="VerifyComments"/>
-          <include name="AddExistingPerson"/>
-          <include name="UndoChanges"/>
-          <include name="VerifySearchandSelectRegGrp"/>
-          <include name="verifyGlobalConfigpage"/>
-          <include name="SearchShowItem"/>
-          <include name="SingleRegFormVerification"/>
-          <include name="VerifySendEmail"/>
-          <include name="verifyEnterExhibitorSearch"/>
-          <include name="ChangeFlowToExhibitor"/>
-          <include name="verifyRemoveRegGrp"/>
-          <include name="VerifyChangeLead"/>
           <include name="VerifyFindRoomsTab"/>
-          <include name="verifyGlobalSettings"/>
-          <include name="verifySearchPage"/>
-          <include name="RuleOverrideSelect"/>
-          <include name="VerifyBookRoom"/>
-          <include name="OpenMoveToForm"/>
-          <include name="SelectRegisteredReg"/>
-          <include name="verifyBillingComments"/>
-          <include name="VerifyDeleteOcc"/>
-          <include name="VerifyCancellationPolicy"/>
         </methods>
       </class> <!-- webstaff.TestCases.WebStaff_TCExecution -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -39,7 +39,6 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		System.out.println("Test cases "+WebStaff_TCExecution.row+" failed");
 		xls.setCellData(sheetname, usernamecolnumber+1, WebStaff_TCExecution.row,"Fail");	
 		xls.setCellData(sheetname, usernamecolnumber, WebStaff_TCExecution.row,System.getProperty("user.name"));
-	
 	}
 	
 	@Override
@@ -49,8 +48,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 			TestUtil.takeScreenshotAtEndOfTest();
 		} catch (IOException e) {
 			e.printStackTrace();
-		}*/
-		
+		}*/		
 	}
 	
 	@Override
@@ -67,8 +65,14 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 
 	@Override
 	public void onFinish(ITestContext context) {
-		System.out.println("WebStaff Execution ended");	
-		email.sendEmail(XlsUtil.path);		
+	
+		try {
+			System.out.println("WebStaff Execution ended");
+			Thread.sleep(3000);
+			email.sendEmail(XlsUtil.path);
+		} catch (InterruptedException e) {		
+			e.printStackTrace();
+		}				
 	}
 
 	@Override

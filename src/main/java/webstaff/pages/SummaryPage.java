@@ -1,5 +1,7 @@
 package webstaff.pages;
 
+import java.util.Arrays;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -44,7 +46,7 @@ public class SummaryPage extends TestBase {
 	@FindBy(xpath="(//tbody[@data-ng-repeat]/tr/td/a)[1]")
 	WebElement RegId;
 	
-	//Added Reg Id
+	//Added Reg ID
 	@FindBy(xpath="(//a[@data-ng-click='::$ctrl.editRegistrant(r.registrant)'])[3]")
 	WebElement RegIdTwo;
 	
@@ -188,13 +190,15 @@ public class SummaryPage extends TestBase {
 		misc.Continue_Flow.click();
 		singleRegInfoPage.RegisterAndVerifyBalancePopUp();
 		misc.Close_Save.click();
-		Thread.sleep(2000);		
-		misc.lastRegId.getText().length();
-		lastRegId =misc.lastRegId.getText().substring(6, 11);			
+		Thread.sleep(2000);			  
+		String arr[] = misc.lastRegId.getText().toString().substring(6).split("\\)");
+		lastRegId = Arrays.toString(arr);
+		System.out.println("Last Reg ID after update-"+lastRegId);	
+
 		} catch (InterruptedException e) {			
 			e.printStackTrace();
 		}
-		return lastRegId.contentEquals(RegId.getText().trim());
+		return lastRegId.contentEquals("["+RegId.getText().trim().toString()+"]");
 	}
 	
 	public String OpenFindImportWindow() {

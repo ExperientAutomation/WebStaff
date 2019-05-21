@@ -46,7 +46,11 @@ public class ContactsPage extends TestBase {
 	// Zip Code
 	@FindBy(id = "zipCode")
 	WebElement zipCode;
-
+	
+	//Phone
+	@FindBy(id = "phone")
+	WebElement phone;
+	
 	// Email
 	@FindBy(id = "email")
 	WebElement Email;
@@ -71,10 +75,11 @@ public class ContactsPage extends TestBase {
 		LastName.sendKeys("LN");
 		address.sendKeys("Test Address");
 		zipCode.sendKeys("22222");
+		phone.sendKeys("1234567890");
 		Email.sendKeys("testcontactperson@test.com");
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Email);
 		Contact_Save.click();		
+		Thread.sleep(2000);
 		return misc.ToasterSuccessMsg.getText();
 	}
-	
-
 }
