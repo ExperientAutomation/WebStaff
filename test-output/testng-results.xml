@@ -2,436 +2,436 @@
 <testng-results skipped="0" failed="0" ignored="0" total="105" passed="105">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="495295" started-at="2019-05-21T09:36:54Z" finished-at="2019-05-21T09:45:09Z">
+  <suite name="Default suite" duration-ms="615298" started-at="2019-05-23T10:53:15Z" finished-at="2019-05-23T11:03:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="495295" started-at="2019-05-21T09:36:54Z" finished-at="2019-05-21T09:45:09Z">
+    <test name="Default test" duration-ms="615298" started-at="2019-05-23T10:53:15Z" finished-at="2019-05-23T11:03:30Z">
       <class name="webstaff.TestCases.WebStaff_TCExecution">
-        <test-method status="PASS" signature="setup()[pri:0, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="setup" is-config="true" duration-ms="28308" started-at="2019-05-21T09:36:54Z" finished-at="2019-05-21T09:37:22Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="setup" is-config="true" duration-ms="155820" started-at="2019-05-23T10:53:15Z" finished-at="2019-05-23T10:55:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="LoginPageTest()[pri:1, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="LoginPageTest" duration-ms="6848" started-at="2019-05-21T09:37:22Z" finished-at="2019-05-21T09:37:29Z">
+        <test-method status="PASS" signature="LoginPageTest()[pri:1, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="LoginPageTest" duration-ms="6850" started-at="2019-05-23T10:55:50Z" finished-at="2019-05-23T10:55:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginPageTest -->
-        <test-method status="PASS" signature="QCGroupselectAndLoginPage()[pri:2, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="QCGroupselectAndLoginPage" duration-ms="2737" started-at="2019-05-21T09:37:31Z" finished-at="2019-05-21T09:37:34Z">
+        <test-method status="PASS" signature="QCGroupselectAndLoginPage()[pri:2, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="QCGroupselectAndLoginPage" duration-ms="2697" started-at="2019-05-23T10:56:10Z" finished-at="2019-05-23T10:56:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QCGroupselectAndLoginPage -->
-        <test-method status="PASS" signature="VerifySingleRegForm()[pri:3, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifySingleRegForm" duration-ms="395" started-at="2019-05-21T09:37:36Z" finished-at="2019-05-21T09:37:37Z">
+        <test-method status="PASS" signature="VerifySingleRegForm()[pri:3, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifySingleRegForm" duration-ms="484" started-at="2019-05-23T10:56:14Z" finished-at="2019-05-23T10:56:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifySingleRegForm -->
-        <test-method status="PASS" signature="VerifyChangeRegForm()[pri:4, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyChangeRegForm" duration-ms="6907" started-at="2019-05-21T09:37:38Z" finished-at="2019-05-21T09:37:45Z">
+        <test-method status="PASS" signature="VerifyChangeRegForm()[pri:4, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyChangeRegForm" duration-ms="7164" started-at="2019-05-23T10:56:17Z" finished-at="2019-05-23T10:56:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyChangeRegForm -->
-        <test-method status="PASS" signature="VerifyRegisterRecord()[pri:5, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyRegisterRecord" duration-ms="4296" started-at="2019-05-21T09:37:47Z" finished-at="2019-05-21T09:37:51Z">
+        <test-method status="PASS" signature="VerifyRegisterRecord()[pri:5, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyRegisterRecord" duration-ms="4083" started-at="2019-05-23T10:56:25Z" finished-at="2019-05-23T10:56:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyRegisterRecord -->
-        <test-method status="PASS" signature="VerifyLastRegIDTest()[pri:6, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyLastRegIDTest" duration-ms="731" started-at="2019-05-21T09:37:52Z" finished-at="2019-05-21T09:37:53Z">
+        <test-method status="PASS" signature="VerifyLastRegIDTest()[pri:6, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyLastRegIDTest" duration-ms="620" started-at="2019-05-23T10:56:30Z" finished-at="2019-05-23T10:56:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLastRegIDTest -->
-        <test-method status="PASS" signature="VerifyReOpenRegisteredRecord()[pri:7, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyReOpenRegisteredRecord" duration-ms="4730" started-at="2019-05-21T09:37:55Z" finished-at="2019-05-21T09:38:00Z">
+        <test-method status="PASS" signature="VerifyReOpenRegisteredRecord()[pri:7, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyReOpenRegisteredRecord" duration-ms="4644" started-at="2019-05-23T10:56:32Z" finished-at="2019-05-23T10:56:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyReOpenRegisteredRecord -->
-        <test-method status="PASS" signature="EnterGuestTest()[pri:8, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="EnterGuestTest" duration-ms="527" started-at="2019-05-21T09:38:01Z" finished-at="2019-05-21T09:38:02Z">
+        <test-method status="PASS" signature="EnterGuestTest()[pri:8, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="EnterGuestTest" duration-ms="659" started-at="2019-05-23T10:56:38Z" finished-at="2019-05-23T10:56:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnterGuestTest -->
-        <test-method status="PASS" signature="VerifyEnterGuestAndSave()[pri:9, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyEnterGuestAndSave" duration-ms="1056" started-at="2019-05-21T09:38:03Z" finished-at="2019-05-21T09:38:04Z">
+        <test-method status="PASS" signature="VerifyEnterGuestAndSave()[pri:9, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyEnterGuestAndSave" duration-ms="861" started-at="2019-05-23T10:56:39Z" finished-at="2019-05-23T10:56:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyEnterGuestAndSave -->
-        <test-method status="PASS" signature="VerifyGuestLabel()[pri:10, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyGuestLabel" duration-ms="185" started-at="2019-05-21T09:38:05Z" finished-at="2019-05-21T09:38:05Z">
+        <test-method status="PASS" signature="VerifyGuestLabel()[pri:10, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyGuestLabel" duration-ms="193" started-at="2019-05-23T10:56:41Z" finished-at="2019-05-23T10:56:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyGuestLabel -->
-        <test-method status="PASS" signature="VerifyOpenShowItems()[pri:11, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyOpenShowItems" duration-ms="1275" started-at="2019-05-21T09:38:06Z" finished-at="2019-05-21T09:38:07Z">
+        <test-method status="PASS" signature="VerifyOpenShowItems()[pri:11, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyOpenShowItems" duration-ms="885" started-at="2019-05-23T10:56:42Z" finished-at="2019-05-23T10:56:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOpenShowItems -->
-        <test-method status="PASS" signature="VerifySearchShowItem()[pri:12, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifySearchShowItem" duration-ms="2320" started-at="2019-05-21T09:38:08Z" finished-at="2019-05-21T09:38:11Z">
+        <test-method status="PASS" signature="VerifySearchShowItem()[pri:12, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifySearchShowItem" duration-ms="2364" started-at="2019-05-23T10:56:44Z" finished-at="2019-05-23T10:56:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifySearchShowItem -->
-        <test-method status="PASS" signature="VerifyAddShowItemsToCart()[pri:13, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyAddShowItemsToCart" duration-ms="1207" started-at="2019-05-21T09:38:11Z" finished-at="2019-05-21T09:38:13Z">
+        <test-method status="PASS" signature="VerifyAddShowItemsToCart()[pri:13, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyAddShowItemsToCart" duration-ms="865" started-at="2019-05-23T10:56:47Z" finished-at="2019-05-23T10:56:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAddShowItemsToCart -->
-        <test-method status="PASS" signature="VerifyShowItemTab()[pri:14, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyShowItemTab" duration-ms="378" started-at="2019-05-21T09:38:14Z" finished-at="2019-05-21T09:38:14Z">
+        <test-method status="PASS" signature="VerifyShowItemTab()[pri:14, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyShowItemTab" duration-ms="365" started-at="2019-05-23T10:56:49Z" finished-at="2019-05-23T10:56:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyShowItemTab -->
-        <test-method status="PASS" signature="VerifyInCart()[pri:15, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyInCart" duration-ms="2498" started-at="2019-05-21T09:38:15Z" finished-at="2019-05-21T09:38:18Z">
+        <test-method status="PASS" signature="VerifyInCart()[pri:15, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyInCart" duration-ms="2439" started-at="2019-05-23T10:56:51Z" finished-at="2019-05-23T10:56:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyInCart -->
-        <test-method status="PASS" signature="VerifyOpenBadgeFields()[pri:16, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyOpenBadgeFields" duration-ms="801" started-at="2019-05-21T09:38:19Z" finished-at="2019-05-21T09:38:20Z">
+        <test-method status="PASS" signature="VerifyOpenBadgeFields()[pri:16, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyOpenBadgeFields" duration-ms="839" started-at="2019-05-23T10:56:54Z" finished-at="2019-05-23T10:56:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOpenBadgeFields -->
-        <test-method status="PASS" signature="VerifyEnterBadgeFields()[pri:17, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyEnterBadgeFields" duration-ms="3034" started-at="2019-05-21T09:38:20Z" finished-at="2019-05-21T09:38:23Z">
+        <test-method status="PASS" signature="VerifyEnterBadgeFields()[pri:17, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyEnterBadgeFields" duration-ms="3152" started-at="2019-05-23T10:56:56Z" finished-at="2019-05-23T10:56:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyEnterBadgeFields -->
-        <test-method status="PASS" signature="VerifyOpenSpecailAccModal()[pri:18, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyOpenSpecailAccModal" duration-ms="282" started-at="2019-05-21T09:38:24Z" finished-at="2019-05-21T09:38:25Z">
+        <test-method status="PASS" signature="VerifyOpenSpecailAccModal()[pri:18, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyOpenSpecailAccModal" duration-ms="327" started-at="2019-05-23T10:57:00Z" finished-at="2019-05-23T10:57:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOpenSpecailAccModal -->
-        <test-method status="PASS" signature="VerifyvEnterSpecialAcc()[pri:19, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyvEnterSpecialAcc" duration-ms="1297" started-at="2019-05-21T09:38:25Z" finished-at="2019-05-21T09:38:27Z">
+        <test-method status="PASS" signature="VerifyvEnterSpecialAcc()[pri:19, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyvEnterSpecialAcc" duration-ms="1296" started-at="2019-05-23T10:57:01Z" finished-at="2019-05-23T10:57:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyvEnterSpecialAcc -->
-        <test-method status="PASS" signature="VerifyOpenNoteWindow()[pri:20, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyOpenNoteWindow" duration-ms="317" started-at="2019-05-21T09:38:28Z" finished-at="2019-05-21T09:38:28Z">
+        <test-method status="PASS" signature="VerifyOpenNoteWindow()[pri:20, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyOpenNoteWindow" duration-ms="438" started-at="2019-05-23T10:57:03Z" finished-at="2019-05-23T10:57:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOpenNoteWindow -->
-        <test-method status="PASS" signature="VerifyEnterSpecailNotes()[pri:21, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyEnterSpecailNotes" duration-ms="10060" started-at="2019-05-21T09:38:29Z" finished-at="2019-05-21T09:38:39Z">
+        <test-method status="PASS" signature="VerifyEnterSpecailNotes()[pri:21, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyEnterSpecailNotes" duration-ms="10411" started-at="2019-05-23T10:57:05Z" finished-at="2019-05-23T10:57:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyEnterSpecailNotes -->
-        <test-method status="PASS" signature="VerifyOpenMoveToForm()[pri:22, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyOpenMoveToForm" duration-ms="290" started-at="2019-05-21T09:38:40Z" finished-at="2019-05-21T09:38:41Z">
+        <test-method status="PASS" signature="VerifyOpenMoveToForm()[pri:22, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyOpenMoveToForm" duration-ms="356" started-at="2019-05-23T10:57:16Z" finished-at="2019-05-23T10:57:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOpenMoveToForm -->
-        <test-method status="PASS" signature="VerifyChangeFlowToExhibitor()[pri:23, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyChangeFlowToExhibitor" duration-ms="1310" started-at="2019-05-21T09:38:41Z" finished-at="2019-05-21T09:38:43Z">
+        <test-method status="PASS" signature="VerifyChangeFlowToExhibitor()[pri:23, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyChangeFlowToExhibitor" duration-ms="1383" started-at="2019-05-23T10:57:18Z" finished-at="2019-05-23T10:57:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyChangeFlowToExhibitor -->
-        <test-method status="PASS" signature="VerifyUndoChanges()[pri:24, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyUndoChanges" duration-ms="1807" started-at="2019-05-21T09:38:44Z" finished-at="2019-05-21T09:38:45Z">
+        <test-method status="PASS" signature="VerifyUndoChanges()[pri:24, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyUndoChanges" duration-ms="2457" started-at="2019-05-23T10:57:20Z" finished-at="2019-05-23T10:57:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyUndoChanges -->
-        <test-method status="PASS" signature="VerifyRuleOverrides()[pri:25, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyRuleOverrides" duration-ms="2703" started-at="2019-05-21T09:38:46Z" finished-at="2019-05-21T09:38:49Z">
+        <test-method status="PASS" signature="VerifyRuleOverrides()[pri:25, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyRuleOverrides" duration-ms="2780" started-at="2019-05-23T10:57:24Z" finished-at="2019-05-23T10:57:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyRuleOverrides -->
-        <test-method status="PASS" signature="RuleOverrideSelect()[pri:26, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="RuleOverrideSelect" duration-ms="6890" started-at="2019-05-21T09:38:50Z" finished-at="2019-05-21T09:38:57Z">
+        <test-method status="PASS" signature="RuleOverrideSelect()[pri:26, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="RuleOverrideSelect" duration-ms="7075" started-at="2019-05-23T10:57:27Z" finished-at="2019-05-23T10:57:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RuleOverrideSelect -->
-        <test-method status="PASS" signature="verifyResetLink()[pri:27, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyResetLink" duration-ms="552" started-at="2019-05-21T09:39:00Z" finished-at="2019-05-21T09:39:00Z">
+        <test-method status="PASS" signature="verifyResetLink()[pri:27, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyResetLink" duration-ms="328" started-at="2019-05-23T10:57:35Z" finished-at="2019-05-23T10:57:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyResetLink -->
-        <test-method status="PASS" signature="verifyCancelRecordWindow()[pri:28, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyCancelRecordWindow" duration-ms="299" started-at="2019-05-21T09:39:01Z" finished-at="2019-05-21T09:39:01Z">
+        <test-method status="PASS" signature="verifyCancelRecordWindow()[pri:28, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyCancelRecordWindow" duration-ms="314" started-at="2019-05-23T10:57:37Z" finished-at="2019-05-23T10:57:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCancelRecordWindow -->
-        <test-method status="PASS" signature="VerifyCancelledText()[pri:29, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyCancelledText" duration-ms="672" started-at="2019-05-21T09:39:02Z" finished-at="2019-05-21T09:39:03Z">
+        <test-method status="PASS" signature="VerifyCancelledText()[pri:29, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyCancelledText" duration-ms="487" started-at="2019-05-23T10:57:38Z" finished-at="2019-05-23T10:57:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCancelledText -->
-        <test-method status="PASS" signature="VerifyUnCancelRecordPopupMsg()[pri:30, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyUnCancelRecordPopupMsg" duration-ms="5039" started-at="2019-05-21T09:39:04Z" finished-at="2019-05-21T09:39:09Z">
+        <test-method status="PASS" signature="VerifyUnCancelRecordPopupMsg()[pri:30, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyUnCancelRecordPopupMsg" duration-ms="4614" started-at="2019-05-23T10:57:40Z" finished-at="2019-05-23T10:57:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyUnCancelRecordPopupMsg -->
-        <test-method status="PASS" signature="VerifyUnCancelAndSave()[pri:31, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyUnCancelAndSave" duration-ms="11625" started-at="2019-05-21T09:39:10Z" finished-at="2019-05-21T09:39:22Z">
+        <test-method status="PASS" signature="VerifyUnCancelAndSave()[pri:31, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyUnCancelAndSave" duration-ms="10782" started-at="2019-05-23T10:57:45Z" finished-at="2019-05-23T10:57:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyUnCancelAndSave -->
-        <test-method status="PASS" signature="VerifyShowItemTabTest()[pri:32, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyShowItemTabTest" duration-ms="507" started-at="2019-05-21T09:39:22Z" finished-at="2019-05-21T09:39:23Z">
+        <test-method status="PASS" signature="VerifyShowItemTabTest()[pri:32, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyShowItemTabTest" duration-ms="203" started-at="2019-05-23T10:57:57Z" finished-at="2019-05-23T10:57:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyShowItemTabTest -->
-        <test-method status="PASS" signature="VerifyTransactionTab()[pri:33, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyTransactionTab" duration-ms="300" started-at="2019-05-21T09:39:24Z" finished-at="2019-05-21T09:39:25Z">
+        <test-method status="PASS" signature="VerifyTransactionTab()[pri:33, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyTransactionTab" duration-ms="194" started-at="2019-05-23T10:57:59Z" finished-at="2019-05-23T10:57:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyTransactionTab -->
-        <test-method status="PASS" signature="OpenPendsTab()[pri:34, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="OpenPendsTab" duration-ms="195" started-at="2019-05-21T09:39:26Z" finished-at="2019-05-21T09:39:26Z">
+        <test-method status="PASS" signature="OpenPendsTab()[pri:34, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="OpenPendsTab" duration-ms="219" started-at="2019-05-23T10:58:00Z" finished-at="2019-05-23T10:58:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenPendsTab -->
-        <test-method status="PASS" signature="SelectPendTypeList()[pri:35, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="SelectPendTypeList" duration-ms="1445" started-at="2019-05-21T09:39:28Z" finished-at="2019-05-21T09:39:29Z">
+        <test-method status="PASS" signature="SelectPendTypeList()[pri:35, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="SelectPendTypeList" duration-ms="1066" started-at="2019-05-23T10:58:01Z" finished-at="2019-05-23T10:58:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelectPendTypeList -->
-        <test-method status="PASS" signature="VerifyPendResolved()[pri:36, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyPendResolved" duration-ms="2898" started-at="2019-05-21T09:39:30Z" finished-at="2019-05-21T09:39:33Z">
+        <test-method status="PASS" signature="VerifyPendResolved()[pri:36, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyPendResolved" duration-ms="3186" started-at="2019-05-23T10:58:03Z" finished-at="2019-05-23T10:58:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyPendResolved -->
-        <test-method status="PASS" signature="OpenConfirmationTab()[pri:37, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="OpenConfirmationTab" duration-ms="186" started-at="2019-05-21T09:39:34Z" finished-at="2019-05-21T09:39:35Z">
+        <test-method status="PASS" signature="OpenConfirmationTab()[pri:37, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="OpenConfirmationTab" duration-ms="181" started-at="2019-05-23T10:58:07Z" finished-at="2019-05-23T10:58:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenConfirmationTab -->
-        <test-method status="PASS" signature="VerifyConfirmationPreviewWindow()[pri:38, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyConfirmationPreviewWindow" duration-ms="2742" started-at="2019-05-21T09:39:36Z" finished-at="2019-05-21T09:39:38Z">
+        <test-method status="PASS" signature="VerifyConfirmationPreviewWindow()[pri:38, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyConfirmationPreviewWindow" duration-ms="1674" started-at="2019-05-23T10:58:09Z" finished-at="2019-05-23T10:58:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyConfirmationPreviewWindow -->
-        <test-method status="PASS" signature="BookingMode()[pri:39, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="BookingMode" duration-ms="656" started-at="2019-05-21T09:39:39Z" finished-at="2019-05-21T09:39:40Z">
+        <test-method status="PASS" signature="BookingMode()[pri:39, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="BookingMode" duration-ms="392" started-at="2019-05-23T10:58:11Z" finished-at="2019-05-23T10:58:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookingMode -->
-        <test-method status="PASS" signature="AddNewPerson()[pri:40, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="AddNewPerson" duration-ms="159" started-at="2019-05-21T09:39:41Z" finished-at="2019-05-21T09:39:41Z">
+        <test-method status="PASS" signature="AddNewPerson()[pri:40, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="AddNewPerson" duration-ms="409" started-at="2019-05-23T10:58:13Z" finished-at="2019-05-23T10:58:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddNewPerson -->
-        <test-method status="PASS" signature="ClickCreateNewlink()[pri:41, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="ClickCreateNewlink" duration-ms="8720" started-at="2019-05-21T09:39:42Z" finished-at="2019-05-21T09:39:51Z">
+        <test-method status="PASS" signature="ClickCreateNewlink()[pri:41, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="ClickCreateNewlink" duration-ms="8714" started-at="2019-05-23T10:58:15Z" finished-at="2019-05-23T10:58:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickCreateNewlink -->
-        <test-method status="PASS" signature="AddExistingPerson()[pri:42, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="AddExistingPerson" duration-ms="422" started-at="2019-05-21T09:39:52Z" finished-at="2019-05-21T09:39:53Z">
+        <test-method status="PASS" signature="AddExistingPerson()[pri:42, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="AddExistingPerson" duration-ms="474" started-at="2019-05-23T10:58:24Z" finished-at="2019-05-23T10:58:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddExistingPerson -->
-        <test-method status="PASS" signature="EnterAlreadyRegIdAndSearch()[pri:43, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="EnterAlreadyRegIdAndSearch" duration-ms="659" started-at="2019-05-21T09:39:54Z" finished-at="2019-05-21T09:39:54Z">
+        <test-method status="PASS" signature="EnterAlreadyRegIdAndSearch()[pri:43, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="EnterAlreadyRegIdAndSearch" duration-ms="486" started-at="2019-05-23T10:58:26Z" finished-at="2019-05-23T10:58:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnterAlreadyRegIdAndSearch -->
-        <test-method status="PASS" signature="SelectRegisteredReg()[pri:44, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="SelectRegisteredReg" duration-ms="10546" started-at="2019-05-21T09:39:55Z" finished-at="2019-05-21T09:40:06Z">
+        <test-method status="PASS" signature="SelectRegisteredReg()[pri:44, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="SelectRegisteredReg" duration-ms="11120" started-at="2019-05-23T10:58:27Z" finished-at="2019-05-23T10:58:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelectRegisteredReg -->
-        <test-method status="PASS" signature="VerifyRemoveRegistrant()[pri:45, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyRemoveRegistrant" duration-ms="537" started-at="2019-05-21T09:40:07Z" finished-at="2019-05-21T09:40:07Z">
+        <test-method status="PASS" signature="VerifyRemoveRegistrant()[pri:45, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyRemoveRegistrant" duration-ms="498" started-at="2019-05-23T10:58:39Z" finished-at="2019-05-23T10:58:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyRemoveRegistrant -->
-        <test-method status="PASS" signature="VerifySelectContactPerson()[pri:46, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifySelectContactPerson" duration-ms="15754" started-at="2019-05-21T09:40:08Z" finished-at="2019-05-21T09:40:24Z">
+        <test-method status="PASS" signature="VerifySelectContactPerson()[pri:46, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifySelectContactPerson" duration-ms="15747" started-at="2019-05-23T10:58:41Z" finished-at="2019-05-23T10:58:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifySelectContactPerson -->
-        <test-method status="PASS" signature="VerifyPreviewConfirmation()[pri:47, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyPreviewConfirmation" duration-ms="1241" started-at="2019-05-21T09:40:25Z" finished-at="2019-05-21T09:40:26Z">
+        <test-method status="PASS" signature="VerifyPreviewConfirmation()[pri:47, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyPreviewConfirmation" duration-ms="889" started-at="2019-05-23T10:58:58Z" finished-at="2019-05-23T10:58:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyPreviewConfirmation -->
-        <test-method status="PASS" signature="VerifySendEmail()[pri:48, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifySendEmail" duration-ms="2202" started-at="2019-05-21T09:40:27Z" finished-at="2019-05-21T09:40:30Z">
+        <test-method status="PASS" signature="VerifySendEmail()[pri:48, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifySendEmail" duration-ms="1140" started-at="2019-05-23T10:58:59Z" finished-at="2019-05-23T10:59:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifySendEmail -->
-        <test-method status="PASS" signature="VerifyComments()[pri:49, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyComments" duration-ms="392" started-at="2019-05-21T09:40:31Z" finished-at="2019-05-21T09:40:31Z">
+        <test-method status="PASS" signature="VerifyComments()[pri:49, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyComments" duration-ms="535" started-at="2019-05-23T10:59:01Z" finished-at="2019-05-23T10:59:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyComments -->
-        <test-method status="PASS" signature="VerifyCommentTypeURGO()[pri:50, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyCommentTypeURGO" duration-ms="5505" started-at="2019-05-21T09:40:32Z" finished-at="2019-05-21T09:40:37Z">
+        <test-method status="PASS" signature="VerifyCommentTypeURGO()[pri:50, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyCommentTypeURGO" duration-ms="5557" started-at="2019-05-23T10:59:03Z" finished-at="2019-05-23T10:59:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCommentTypeURGO -->
-        <test-method status="PASS" signature="VerifyCommentTypeURGA()[pri:51, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyCommentTypeURGA" duration-ms="7373" started-at="2019-05-21T09:40:38Z" finished-at="2019-05-21T09:40:46Z">
+        <test-method status="PASS" signature="VerifyCommentTypeURGA()[pri:51, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyCommentTypeURGA" duration-ms="7002" started-at="2019-05-23T10:59:09Z" finished-at="2019-05-23T10:59:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCommentTypeURGA -->
-        <test-method status="PASS" signature="VerifyBothCommentTypeURGOnURGA()[pri:52, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyBothCommentTypeURGOnURGA" duration-ms="2347" started-at="2019-05-21T09:40:46Z" finished-at="2019-05-21T09:40:49Z">
+        <test-method status="PASS" signature="VerifyBothCommentTypeURGOnURGA()[pri:52, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyBothCommentTypeURGOnURGA" duration-ms="2365" started-at="2019-05-23T10:59:18Z" finished-at="2019-05-23T10:59:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyBothCommentTypeURGOnURGA -->
-        <test-method status="PASS" signature="VerifyContactTab()[pri:53, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyContactTab" duration-ms="482" started-at="2019-05-21T09:40:49Z" finished-at="2019-05-21T09:40:50Z">
+        <test-method status="PASS" signature="VerifyContactTab()[pri:53, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyContactTab" duration-ms="380" started-at="2019-05-23T10:59:21Z" finished-at="2019-05-23T10:59:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyContactTab -->
-        <test-method status="PASS" signature="EnterNewContact()[pri:54, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="EnterNewContact" duration-ms="6324" started-at="2019-05-21T09:40:51Z" finished-at="2019-05-21T09:40:58Z">
+        <test-method status="PASS" signature="EnterNewContact()[pri:54, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="EnterNewContact" duration-ms="6083" started-at="2019-05-23T10:59:23Z" finished-at="2019-05-23T10:59:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnterNewContact -->
-        <test-method status="PASS" signature="VerifyFindRoomsTab()[pri:55, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyFindRoomsTab" duration-ms="515" started-at="2019-05-21T09:40:58Z" finished-at="2019-05-21T09:40:59Z">
+        <test-method status="PASS" signature="VerifyFindRoomsTab()[pri:55, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyFindRoomsTab" duration-ms="482" started-at="2019-05-23T10:59:30Z" finished-at="2019-05-23T10:59:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyFindRoomsTab -->
-        <test-method status="PASS" signature="VerifyViewInventory()[pri:56, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyViewInventory" duration-ms="3431" started-at="2019-05-21T09:41:00Z" finished-at="2019-05-21T09:41:03Z">
+        <test-method status="PASS" signature="VerifyViewInventory()[pri:56, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyViewInventory" duration-ms="3621" started-at="2019-05-23T10:59:32Z" finished-at="2019-05-23T10:59:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyViewInventory -->
-        <test-method status="PASS" signature="VerifyFindRooms()[pri:57, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyFindRooms" duration-ms="939" started-at="2019-05-21T09:41:04Z" finished-at="2019-05-21T09:41:05Z">
+        <test-method status="PASS" signature="VerifyFindRooms()[pri:57, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyFindRooms" duration-ms="323" started-at="2019-05-23T10:59:36Z" finished-at="2019-05-23T10:59:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyFindRooms -->
-        <test-method status="PASS" signature="VerifyHoldRoom()[pri:58, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyHoldRoom" duration-ms="1793" started-at="2019-05-21T09:41:06Z" finished-at="2019-05-21T09:41:08Z">
+        <test-method status="PASS" signature="VerifyHoldRoom()[pri:58, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyHoldRoom" duration-ms="1265" started-at="2019-05-23T10:59:38Z" finished-at="2019-05-23T10:59:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyHoldRoom -->
-        <test-method status="PASS" signature="VerifyBookRoom()[pri:59, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyBookRoom" duration-ms="752" started-at="2019-05-21T09:41:09Z" finished-at="2019-05-21T09:41:10Z">
+        <test-method status="PASS" signature="VerifyBookRoom()[pri:59, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyBookRoom" duration-ms="590" started-at="2019-05-23T10:59:40Z" finished-at="2019-05-23T10:59:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyBookRoom -->
-        <test-method status="PASS" signature="VerifyAddOccupant()[pri:60, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyAddOccupant" duration-ms="1108" started-at="2019-05-21T09:41:11Z" finished-at="2019-05-21T09:41:12Z">
+        <test-method status="PASS" signature="VerifyAddOccupant()[pri:60, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyAddOccupant" duration-ms="1539" started-at="2019-05-23T10:59:42Z" finished-at="2019-05-23T10:59:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAddOccupant -->
-        <test-method status="PASS" signature="EnterLeadOccdetails()[pri:61, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="EnterLeadOccdetails" duration-ms="7751" started-at="2019-05-21T09:41:13Z" finished-at="2019-05-21T09:41:21Z">
+        <test-method status="PASS" signature="EnterLeadOccdetails()[pri:61, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="EnterLeadOccdetails" duration-ms="7133" started-at="2019-05-23T10:59:44Z" finished-at="2019-05-23T10:59:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnterLeadOccdetails -->
-        <test-method status="PASS" signature="VerifyDeleteOcc()[pri:62, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyDeleteOcc" duration-ms="3489" started-at="2019-05-21T09:41:22Z" finished-at="2019-05-21T09:41:26Z">
+        <test-method status="PASS" signature="VerifyDeleteOcc()[pri:62, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyDeleteOcc" duration-ms="3856" started-at="2019-05-23T10:59:53Z" finished-at="2019-05-23T10:59:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyDeleteOcc -->
-        <test-method status="PASS" signature="VerifyExistingOcc()[pri:63, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyExistingOcc" duration-ms="6157" started-at="2019-05-21T09:41:27Z" finished-at="2019-05-21T09:41:33Z">
+        <test-method status="PASS" signature="VerifyExistingOcc()[pri:63, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyExistingOcc" duration-ms="5809" started-at="2019-05-23T10:59:57Z" finished-at="2019-05-23T11:00:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyExistingOcc -->
-        <test-method status="PASS" signature="VerifyChangeLead()[pri:64, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyChangeLead" duration-ms="4383" started-at="2019-05-21T09:41:34Z" finished-at="2019-05-21T09:41:38Z">
+        <test-method status="PASS" signature="VerifyChangeLead()[pri:64, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyChangeLead" duration-ms="4423" started-at="2019-05-23T11:00:04Z" finished-at="2019-05-23T11:00:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyChangeLead -->
-        <test-method status="PASS" signature="VerifyEditOccupant()[pri:65, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyEditOccupant" duration-ms="3334" started-at="2019-05-21T09:41:40Z" finished-at="2019-05-21T09:41:43Z">
+        <test-method status="PASS" signature="VerifyEditOccupant()[pri:65, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyEditOccupant" duration-ms="3069" started-at="2019-05-23T11:00:09Z" finished-at="2019-05-23T11:00:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyEditOccupant -->
-        <test-method status="PASS" signature="VerifyCancellationPolicy()[pri:66, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyCancellationPolicy" duration-ms="2380" started-at="2019-05-21T09:41:44Z" finished-at="2019-05-21T09:41:46Z">
+        <test-method status="PASS" signature="VerifyCancellationPolicy()[pri:66, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyCancellationPolicy" duration-ms="2518" started-at="2019-05-23T11:00:14Z" finished-at="2019-05-23T11:00:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCancellationPolicy -->
-        <test-method status="PASS" signature="VerifyChangeDates()[pri:67, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyChangeDates" duration-ms="4683" started-at="2019-05-21T09:41:47Z" finished-at="2019-05-21T09:41:52Z">
+        <test-method status="PASS" signature="VerifyChangeDates()[pri:67, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyChangeDates" duration-ms="4944" started-at="2019-05-23T11:00:18Z" finished-at="2019-05-23T11:00:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyChangeDates -->
-        <test-method status="PASS" signature="VerifyChangeRoomspopup()[pri:68, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyChangeRoomspopup" duration-ms="559" started-at="2019-05-21T09:41:53Z" finished-at="2019-05-21T09:41:54Z">
+        <test-method status="PASS" signature="VerifyChangeRoomspopup()[pri:68, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyChangeRoomspopup" duration-ms="365" started-at="2019-05-23T11:00:24Z" finished-at="2019-05-23T11:00:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyChangeRoomspopup -->
-        <test-method status="PASS" signature="VerifyChangeRoom()[pri:69, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyChangeRoom" duration-ms="2175" started-at="2019-05-21T09:41:55Z" finished-at="2019-05-21T09:41:57Z">
+        <test-method status="PASS" signature="VerifyChangeRoom()[pri:69, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyChangeRoom" duration-ms="2211" started-at="2019-05-23T11:00:25Z" finished-at="2019-05-23T11:00:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyChangeRoom -->
-        <test-method status="PASS" signature="VerifyChangeRatesPopup()[pri:70, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyChangeRatesPopup" duration-ms="2804" started-at="2019-05-21T09:41:58Z" finished-at="2019-05-21T09:42:01Z">
+        <test-method status="PASS" signature="VerifyChangeRatesPopup()[pri:70, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyChangeRatesPopup" duration-ms="2746" started-at="2019-05-23T11:00:31Z" finished-at="2019-05-23T11:00:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyChangeRatesPopup -->
-        <test-method status="PASS" signature="VerifyChangeRate()[pri:71, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyChangeRate" duration-ms="2654" started-at="2019-05-21T09:42:02Z" finished-at="2019-05-21T09:42:04Z">
+        <test-method status="PASS" signature="VerifyChangeRate()[pri:71, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyChangeRate" duration-ms="2896" started-at="2019-05-23T11:00:35Z" finished-at="2019-05-23T11:00:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyChangeRate -->
-        <test-method status="PASS" signature="VerifyReleaseRoom()[pri:72, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyReleaseRoom" duration-ms="3645" started-at="2019-05-21T09:42:06Z" finished-at="2019-05-21T09:42:09Z">
+        <test-method status="PASS" signature="VerifyReleaseRoom()[pri:72, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyReleaseRoom" duration-ms="3602" started-at="2019-05-23T11:00:39Z" finished-at="2019-05-23T11:00:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyReleaseRoom -->
-        <test-method status="PASS" signature="VerifyHotelCONF()[pri:73, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyHotelCONF" duration-ms="3888" started-at="2019-05-21T09:42:10Z" finished-at="2019-05-21T09:42:14Z">
+        <test-method status="PASS" signature="VerifyHotelCONF()[pri:73, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyHotelCONF" duration-ms="4268" started-at="2019-05-23T11:00:44Z" finished-at="2019-05-23T11:00:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyHotelCONF -->
-        <test-method status="PASS" signature="VerifyDeposit()[pri:74, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyDeposit" duration-ms="2517" started-at="2019-05-21T09:42:15Z" finished-at="2019-05-21T09:42:17Z">
+        <test-method status="PASS" signature="VerifyDeposit()[pri:74, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifyDeposit" duration-ms="2570" started-at="2019-05-23T11:00:49Z" finished-at="2019-05-23T11:00:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyDeposit -->
-        <test-method status="PASS" signature="VerifySpecialRequest()[pri:75, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifySpecialRequest" duration-ms="4349" started-at="2019-05-21T09:42:18Z" finished-at="2019-05-21T09:42:23Z">
+        <test-method status="PASS" signature="VerifySpecialRequest()[pri:75, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifySpecialRequest" duration-ms="3904" started-at="2019-05-23T11:00:53Z" finished-at="2019-05-23T11:00:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifySpecialRequest -->
-        <test-method status="PASS" signature="verifyBillingComments()[pri:76, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyBillingComments" duration-ms="2843" started-at="2019-05-21T09:42:23Z" finished-at="2019-05-21T09:42:26Z">
+        <test-method status="PASS" signature="verifyBillingComments()[pri:76, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyBillingComments" duration-ms="3122" started-at="2019-05-23T11:00:58Z" finished-at="2019-05-23T11:01:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBillingComments -->
-        <test-method status="PASS" signature="verifyWebComments()[pri:77, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyWebComments" duration-ms="2682" started-at="2019-05-21T09:42:27Z" finished-at="2019-05-21T09:42:30Z">
+        <test-method status="PASS" signature="verifyWebComments()[pri:77, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyWebComments" duration-ms="2703" started-at="2019-05-23T11:01:02Z" finished-at="2019-05-23T11:01:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWebComments -->
-        <test-method status="PASS" signature="verifyPaymentTab()[pri:78, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyPaymentTab" duration-ms="260" started-at="2019-05-21T09:42:31Z" finished-at="2019-05-21T09:42:31Z">
+        <test-method status="PASS" signature="verifyPaymentTab()[pri:78, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyPaymentTab" duration-ms="278" started-at="2019-05-23T11:01:06Z" finished-at="2019-05-23T11:01:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPaymentTab -->
-        <test-method status="PASS" signature="verifyAllHousing()[pri:79, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyAllHousing" duration-ms="2173" started-at="2019-05-21T09:42:32Z" finished-at="2019-05-21T09:42:35Z">
+        <test-method status="PASS" signature="verifyAllHousing()[pri:79, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyAllHousing" duration-ms="2685" started-at="2019-05-23T11:01:07Z" finished-at="2019-05-23T11:01:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllHousing -->
-        <test-method status="PASS" signature="verifyMakePayment()[pri:80, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyMakePayment" duration-ms="523" started-at="2019-05-21T09:42:36Z" finished-at="2019-05-21T09:42:36Z">
+        <test-method status="PASS" signature="verifyMakePayment()[pri:80, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyMakePayment" duration-ms="523" started-at="2019-05-23T11:01:11Z" finished-at="2019-05-23T11:01:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMakePayment -->
-        <test-method status="PASS" signature="verifyAddPayment()[pri:81, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyAddPayment" duration-ms="1778" started-at="2019-05-21T09:42:37Z" finished-at="2019-05-21T09:42:39Z">
+        <test-method status="PASS" signature="verifyAddPayment()[pri:81, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyAddPayment" duration-ms="1298" started-at="2019-05-23T11:01:13Z" finished-at="2019-05-23T11:01:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddPayment -->
-        <test-method status="PASS" signature="verifyEnterPaymentDetails()[pri:82, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyEnterPaymentDetails" duration-ms="10084" started-at="2019-05-21T09:42:41Z" finished-at="2019-05-21T09:42:51Z">
+        <test-method status="PASS" signature="verifyEnterPaymentDetails()[pri:82, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyEnterPaymentDetails" duration-ms="9937" started-at="2019-05-23T11:01:15Z" finished-at="2019-05-23T11:01:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEnterPaymentDetails -->
-        <test-method status="PASS" signature="verifyContinueButt()[pri:83, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyContinueButt" duration-ms="1719" started-at="2019-05-21T09:42:52Z" finished-at="2019-05-21T09:42:54Z">
+        <test-method status="PASS" signature="verifyContinueButt()[pri:83, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyContinueButt" duration-ms="1852" started-at="2019-05-23T11:01:26Z" finished-at="2019-05-23T11:01:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContinueButt -->
-        <test-method status="PASS" signature="verifySelectRegLink()[pri:84, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifySelectRegLink" duration-ms="2232" started-at="2019-05-21T09:42:55Z" finished-at="2019-05-21T09:42:57Z">
+        <test-method status="PASS" signature="verifySelectRegLink()[pri:84, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifySelectRegLink" duration-ms="2272" started-at="2019-05-23T11:01:28Z" finished-at="2019-05-23T11:01:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySelectRegLink -->
-        <test-method status="PASS" signature="verifyRegAddPayment()[pri:85, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyRegAddPayment" duration-ms="1892" started-at="2019-05-21T09:42:58Z" finished-at="2019-05-21T09:43:00Z">
+        <test-method status="PASS" signature="verifyRegAddPayment()[pri:85, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyRegAddPayment" duration-ms="1314" started-at="2019-05-23T11:01:32Z" finished-at="2019-05-23T11:01:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegAddPayment -->
-        <test-method status="PASS" signature="verifyRegPaymentdetails()[pri:86, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyRegPaymentdetails" duration-ms="11779" started-at="2019-05-21T09:43:01Z" finished-at="2019-05-21T09:43:13Z">
+        <test-method status="PASS" signature="verifyRegPaymentdetails()[pri:86, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyRegPaymentdetails" duration-ms="12404" started-at="2019-05-23T11:01:34Z" finished-at="2019-05-23T11:01:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegPaymentdetails -->
-        <test-method status="PASS" signature="verifyHistoryTab()[pri:87, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyHistoryTab" duration-ms="651" started-at="2019-05-21T09:43:14Z" finished-at="2019-05-21T09:43:14Z">
+        <test-method status="PASS" signature="verifyHistoryTab()[pri:87, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyHistoryTab" duration-ms="231" started-at="2019-05-23T11:01:48Z" finished-at="2019-05-23T11:01:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHistoryTab -->
-        <test-method status="PASS" signature="verifyConfirmation()[pri:88, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyConfirmation" duration-ms="3452" started-at="2019-05-21T09:43:16Z" finished-at="2019-05-21T09:43:19Z">
+        <test-method status="PASS" signature="verifyConfirmation()[pri:88, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyConfirmation" duration-ms="3389" started-at="2019-05-23T11:01:49Z" finished-at="2019-05-23T11:01:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyConfirmation -->
-        <test-method status="PASS" signature="verifyReservation()[pri:89, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyReservation" duration-ms="3400" started-at="2019-05-21T09:43:23Z" finished-at="2019-05-21T09:43:26Z">
+        <test-method status="PASS" signature="verifyReservation()[pri:89, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyReservation" duration-ms="3825" started-at="2019-05-23T11:01:54Z" finished-at="2019-05-23T11:01:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyReservation -->
-        <test-method status="PASS" signature="verifyRegistrant()[pri:90, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyRegistrant" duration-ms="3434" started-at="2019-05-21T09:43:27Z" finished-at="2019-05-21T09:43:31Z">
+        <test-method status="PASS" signature="verifyRegistrant()[pri:90, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyRegistrant" duration-ms="3507" started-at="2019-05-23T11:01:59Z" finished-at="2019-05-23T11:02:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistrant -->
-        <test-method status="PASS" signature="verifyGroupAssignment()[pri:91, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyGroupAssignment" duration-ms="798" started-at="2019-05-21T09:43:32Z" finished-at="2019-05-21T09:43:33Z">
+        <test-method status="PASS" signature="verifyGroupAssignment()[pri:91, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyGroupAssignment" duration-ms="820" started-at="2019-05-23T11:02:03Z" finished-at="2019-05-23T11:02:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGroupAssignment -->
-        <test-method status="PASS" signature="VerifySearchandSelectRegGrp()[pri:92, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifySearchandSelectRegGrp" duration-ms="1100" started-at="2019-05-21T09:43:34Z" finished-at="2019-05-21T09:43:35Z">
+        <test-method status="PASS" signature="VerifySearchandSelectRegGrp()[pri:92, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="VerifySearchandSelectRegGrp" duration-ms="736" started-at="2019-05-23T11:02:05Z" finished-at="2019-05-23T11:02:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifySearchandSelectRegGrp -->
-        <test-method status="PASS" signature="verifyRemoveRegGrp()[pri:93, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyRemoveRegGrp" duration-ms="62499" started-at="2019-05-21T09:43:40Z" finished-at="2019-05-21T09:44:43Z">
+        <test-method status="PASS" signature="verifyRemoveRegGrp()[pri:93, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyRemoveRegGrp" duration-ms="62553" started-at="2019-05-23T11:02:07Z" finished-at="2019-05-23T11:03:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRemoveRegGrp -->
-        <test-method status="PASS" signature="verifyExitAndConfirmationWindow()[pri:94, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyExitAndConfirmationWindow" duration-ms="2190" started-at="2019-05-21T09:44:44Z" finished-at="2019-05-21T09:44:46Z">
+        <test-method status="PASS" signature="verifyExitAndConfirmationWindow()[pri:94, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyExitAndConfirmationWindow" duration-ms="2218" started-at="2019-05-23T11:03:10Z" finished-at="2019-05-23T11:03:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyExitAndConfirmationWindow -->
-        <test-method status="PASS" signature="verifySearchReturn()[pri:95, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifySearchReturn" duration-ms="510" started-at="2019-05-21T09:44:47Z" finished-at="2019-05-21T09:44:47Z">
+        <test-method status="PASS" signature="verifySearchReturn()[pri:95, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifySearchReturn" duration-ms="435" started-at="2019-05-23T11:03:13Z" finished-at="2019-05-23T11:03:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchReturn -->
-        <test-method status="PASS" signature="verifySearchPage()[pri:96, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifySearchPage" duration-ms="497" started-at="2019-05-21T09:44:48Z" finished-at="2019-05-21T09:44:49Z">
+        <test-method status="PASS" signature="verifySearchPage()[pri:96, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifySearchPage" duration-ms="459" started-at="2019-05-23T11:03:15Z" finished-at="2019-05-23T11:03:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchPage -->
-        <test-method status="PASS" signature="verifyExhibitorSearch()[pri:97, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyExhibitorSearch" duration-ms="275" started-at="2019-05-21T09:44:50Z" finished-at="2019-05-21T09:44:50Z">
+        <test-method status="PASS" signature="verifyExhibitorSearch()[pri:97, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyExhibitorSearch" duration-ms="248" started-at="2019-05-23T11:03:16Z" finished-at="2019-05-23T11:03:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyExhibitorSearch -->
-        <test-method status="PASS" signature="verifyEnterExhibitorSearch()[pri:98, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyEnterExhibitorSearch" duration-ms="403" started-at="2019-05-21T09:44:51Z" finished-at="2019-05-21T09:44:52Z">
+        <test-method status="PASS" signature="verifyEnterExhibitorSearch()[pri:98, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyEnterExhibitorSearch" duration-ms="413" started-at="2019-05-23T11:03:17Z" finished-at="2019-05-23T11:03:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEnterExhibitorSearch -->
-        <test-method status="PASS" signature="verifyAttendeeSearch()[pri:99, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyAttendeeSearch" duration-ms="269" started-at="2019-05-21T09:44:53Z" finished-at="2019-05-21T09:44:54Z">
+        <test-method status="PASS" signature="verifyAttendeeSearch()[pri:99, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyAttendeeSearch" duration-ms="304" started-at="2019-05-23T11:03:19Z" finished-at="2019-05-23T11:03:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAttendeeSearch -->
-        <test-method status="PASS" signature="verifyEnterAttendeeGrp()[pri:100, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyEnterAttendeeGrp" duration-ms="579" started-at="2019-05-21T09:44:55Z" finished-at="2019-05-21T09:44:55Z">
+        <test-method status="PASS" signature="verifyEnterAttendeeGrp()[pri:100, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyEnterAttendeeGrp" duration-ms="614" started-at="2019-05-23T11:03:20Z" finished-at="2019-05-23T11:03:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEnterAttendeeGrp -->
-        <test-method status="PASS" signature="verifyGlobalConfigpage()[pri:101, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyGlobalConfigpage" duration-ms="1446" started-at="2019-05-21T09:44:56Z" finished-at="2019-05-21T09:44:58Z">
+        <test-method status="PASS" signature="verifyGlobalConfigpage()[pri:101, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyGlobalConfigpage" duration-ms="324" started-at="2019-05-23T11:03:22Z" finished-at="2019-05-23T11:03:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGlobalConfigpage -->
-        <test-method status="PASS" signature="verifyGlobalSettings()[pri:102, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyGlobalSettings" duration-ms="615" started-at="2019-05-21T09:45:01Z" finished-at="2019-05-21T09:45:02Z">
+        <test-method status="PASS" signature="verifyGlobalSettings()[pri:102, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyGlobalSettings" duration-ms="629" started-at="2019-05-23T11:03:23Z" finished-at="2019-05-23T11:03:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGlobalSettings -->
-        <test-method status="PASS" signature="verifyWorkstationPage()[pri:103, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyWorkstationPage" duration-ms="307" started-at="2019-05-21T09:45:03Z" finished-at="2019-05-21T09:45:03Z">
+        <test-method status="PASS" signature="verifyWorkstationPage()[pri:103, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyWorkstationPage" duration-ms="360" started-at="2019-05-23T11:03:25Z" finished-at="2019-05-23T11:03:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWorkstationPage -->
-        <test-method status="PASS" signature="verifyWorkstation()[pri:104, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyWorkstation" duration-ms="2794" started-at="2019-05-21T09:45:04Z" finished-at="2019-05-21T09:45:07Z">
+        <test-method status="PASS" signature="verifyWorkstation()[pri:104, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyWorkstation" duration-ms="852" started-at="2019-05-23T11:03:26Z" finished-at="2019-05-23T11:03:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWorkstation -->
-        <test-method status="PASS" signature="verifyLogOut()[pri:105, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyLogOut" duration-ms="750" started-at="2019-05-21T09:45:08Z" finished-at="2019-05-21T09:45:09Z">
+        <test-method status="PASS" signature="verifyLogOut()[pri:105, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="verifyLogOut" duration-ms="660" started-at="2019-05-23T11:03:28Z" finished-at="2019-05-23T11:03:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogOut -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-05-21T09:45:13Z" finished-at="2019-05-21T09:45:13Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:webstaff.TestCases.WebStaff_TCExecution@74e52303]" name="tearDown" is-config="true" duration-ms="86" started-at="2019-05-23T11:03:33Z" finished-at="2019-05-23T11:03:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

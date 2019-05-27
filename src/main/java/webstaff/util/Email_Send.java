@@ -17,8 +17,8 @@ public class Email_Send extends TestBase {
 
 	String html;
 	public final int usernamecolumn = 6;
-	XlsUtil xls = new XlsUtil();
-	String sheetname = "WebStaff_TC";
+//	XlsUtil xls = new XlsUtil();
+//	String sheetname = "WebStaff_TC";
 
 	@Test
 	public void sendEmail(String excelsheetfilePath) {
@@ -44,8 +44,8 @@ public class Email_Send extends TestBase {
 			Message message = new MimeMessage(session);
 			message.setFrom(new InternetAddress(username));
 
-			// message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("sreejak@infinite.com,Chandrasekhar.Kulandasamy@experient-inc.com,Sirasanambati.Anudeep@infinite.com"));
-			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("Chandrasekhar.Kulandasamy@experient-inc.com"));
+			 message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("sreejak@infinite.com,Chandrasekhar.Kulandasamy@experient-inc.com,chandrasekark@infics.com,Sirasanambati.Anudeep@infinite.com"));
+//			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("Chandrasekhar.Kulandasamy@experient-inc.com,chandrasekark@infics.com"));
 
 			message.setSubject("WebStaff Automation execution Report");
 
@@ -54,7 +54,7 @@ public class Email_Send extends TestBase {
 			Multipart multipart = new MimeMultipart();
 
 			messageBodyPart = new MimeBodyPart();
-			String file = XlsUtil.path;
+			String file = excelsheetfilePath;
 			String fileName = "Automation Test test cases for WebStaff.xlsx";
 			DataSource source = new FileDataSource(file);
 			attachmentPart.setDataHandler(new DataHandler(source));
@@ -85,7 +85,6 @@ public class Email_Send extends TestBase {
 			multipart.addBodyPart(attachmentPart);
 
 			message.setContent(multipart);
-
 			System.out.println("Sending email report");
 			Transport.send(message);
 			System.out.println("Email has been sent.");

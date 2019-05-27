@@ -25,6 +25,8 @@ public class TestBase {
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
 	public static WebDriverWait wait;
+	public static webstaff.util.XlsUtil xls = new webstaff.util.XlsUtil();
+	protected static String sheetname = "WebStaff_TC";
 
 	public TestBase() {
 		try {
@@ -41,6 +43,9 @@ public class TestBase {
 	public static void initialization() {
 
 		String browserName = prop.getProperty("browser");
+		
+		// Clearing existing excel sheet value
+				clearExcelSheet(); 
 
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "\\src\\test\\resources\\drivers\\chromedriver.exe");
@@ -58,8 +63,8 @@ public class TestBase {
 		e_driver = new EventFiringWebDriver(driver);
 		eventListener = new WebEventListener();
 		e_driver.register(eventListener);
-		driver = e_driver;	
-
+		driver = e_driver;			
+		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(TestUtil.PAGE_LOAD_TIMEOUT,TimeUnit.SECONDS);
@@ -84,4 +89,23 @@ public class TestBase {
 
 		return objRepoProp.getProperty(key);
 	}
+	
+	public static void clearExcelSheet() {		
+		
+		System.out.println("Started clearing existing result in Excel sheet.");
+		
+		try {
+			int i =0;		
+			for (i = 2; i <= xls.getRowCount(sheetname); i++) {
+					
+					xls.setCellData(sheetname, 5, i, "");	
+					xls.setCellData(sheetname, 6, i, "");
+				}
+					
+		System.out.println("Existing result cleared");
+			}		
+		catch (Exception e) {		
+			e.printStackTrace();
+		}		
+	}	
 }
